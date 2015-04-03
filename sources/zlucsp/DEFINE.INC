@@ -1,0 +1,2 @@
+{--$DEFINE TEST}
+{--$Define TESTMODE}

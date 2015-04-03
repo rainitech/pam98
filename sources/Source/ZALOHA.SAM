@@ -1,0 +1,118 @@
+mkdir zaloha
+rem-Common------------
+if exist Common\setup.db arj a -r -v1440 zaloha\zaloha%1 Common\
+rem-Private------------
+if exist Private\sys.db arj a -r -v1440 zaloha\zaloha%1 Private\
+rem-Data00------------
+if exist Data\inf.db arj a -r -v1440 zaloha\zaloha%1 Data\
+if exist Data01\inf.db arj a -r -v1440 zaloha\zaloha%1 Data01\
+if exist Data02\inf.db arj a -r -v1440 zaloha\zaloha%1 Data02\
+if exist Data03\inf.db arj a -r -v1440 zaloha\zaloha%1 Data03\
+if exist Data04\inf.db arj a -r -v1440 zaloha\zaloha%1 Data04\
+if exist Data05\inf.db arj a -r -v1440 zaloha\zaloha%1 Data05\
+if exist Data06\inf.db arj a -r -v1440 zaloha\zaloha%1 Data06\
+if exist Data07\inf.db arj a -r -v1440 zaloha\zaloha%1 Data07\
+if exist Data08\inf.db arj a -r -v1440 zaloha\zaloha%1 Data08\
+if exist Data09\inf.db arj a -r -v1440 zaloha\zaloha%1 Data09\
+rem-Data10-------------
+if exist Data10\inf.db arj a -r -v1440 zaloha\zaloha%1 Data10\
+if exist Data11\inf.db arj a -r -v1440 zaloha\zaloha%1 Data11\
+if exist Data12\inf.db arj a -r -v1440 zaloha\zaloha%1 Data12\
+if exist Data13\inf.db arj a -r -v1440 zaloha\zaloha%1 Data13\
+if exist Data14\inf.db arj a -r -v1440 zaloha\zaloha%1 Data14\
+if exist Data15\inf.db arj a -r -v1440 zaloha\zaloha%1 Data15\
+if exist Data16\inf.db arj a -r -v1440 zaloha\zaloha%1 Data16\
+if exist Data17\inf.db arj a -r -v1440 zaloha\zaloha%1 Data17\
+if exist Data18\inf.db arj a -r -v1440 zaloha\zaloha%1 Data18\
+if exist Data19\inf.db arj a -r -v1440 zaloha\zaloha%1 Data19\
+rem-Data20-------------
+if exist Data20\inf.db arj a -r -v1440 zaloha\zaloha%1 Data20\
+if exist Data21\inf.db arj a -r -v1440 zaloha\zaloha%1 Data21\
+if exist Data22\inf.db arj a -r -v1440 zaloha\zaloha%1 Data22\
+if exist Data23\inf.db arj a -r -v1440 zaloha\zaloha%1 Data23\
+if exist Data24\inf.db arj a -r -v1440 zaloha\zaloha%1 Data24\
+if exist Data25\inf.db arj a -r -v1440 zaloha\zaloha%1 Data25\
+if exist Data26\inf.db arj a -r -v1440 zaloha\zaloha%1 Data26\
+if exist Data27\inf.db arj a -r -v1440 zaloha\zaloha%1 Data27\
+if exist Data28\inf.db arj a -r -v1440 zaloha\zaloha%1 Data28\
+if exist Data29\inf.db arj a -r -v1440 zaloha\zaloha%1 Data29\
+rem-Data30-------------
+if exist Data30\inf.db arj a -r -v1440 zaloha\zaloha%1 Data30\
+if exist Data31\inf.db arj a -r -v1440 zaloha\zaloha%1 Data31\
+if exist Data32\inf.db arj a -r -v1440 zaloha\zaloha%1 Data32\
+if exist Data33\inf.db arj a -r -v1440 zaloha\zaloha%1 Data33\
+if exist Data34\inf.db arj a -r -v1440 zaloha\zaloha%1 Data34\
+if exist Data35\inf.db arj a -r -v1440 zaloha\zaloha%1 Data35\
+if exist Data36\inf.db arj a -r -v1440 zaloha\zaloha%1 Data36\
+if exist Data37\inf.db arj a -r -v1440 zaloha\zaloha%1 Data37\
+if exist Data38\inf.db arj a -r -v1440 zaloha\zaloha%1 Data38\
+if exist Data39\inf.db arj a -r -v1440 zaloha\zaloha%1 Data39\
+rem-Data40-------------
+if exist Data40\inf.db arj a -r -v1440 zaloha\zaloha%1 Data40\
+if exist Data41\inf.db arj a -r -v1440 zaloha\zaloha%1 Data41\
+if exist Data42\inf.db arj a -r -v1440 zaloha\zaloha%1 Data42\
+if exist Data43\inf.db arj a -r -v1440 zaloha\zaloha%1 Data43\
+if exist Data44\inf.db arj a -r -v1440 zaloha\zaloha%1 Data44\
+if exist Data45\inf.db arj a -r -v1440 zaloha\zaloha%1 Data45\
+if exist Data46\inf.db arj a -r -v1440 zaloha\zaloha%1 Data46\
+if exist Data47\inf.db arj a -r -v1440 zaloha\zaloha%1 Data47\
+if exist Data48\inf.db arj a -r -v1440 zaloha\zaloha%1 Data48\
+if exist Data49\inf.db arj a -r -v1440 zaloha\zaloha%1 Data49\
+rem-Data50-------------
+if exist Data50\inf.db arj a -r -v1440 zaloha\zaloha%1 Data50\
+if exist Data51\inf.db arj a -r -v1440 zaloha\zaloha%1 Data51\
+if exist Data52\inf.db arj a -r -v1440 zaloha\zaloha%1 Data52\
+if exist Data53\inf.db arj a -r -v1440 zaloha\zaloha%1 Data53\
+if exist Data54\inf.db arj a -r -v1440 zaloha\zaloha%1 Data54\
+if exist Data55\inf.db arj a -r -v1440 zaloha\zaloha%1 Data55\
+if exist Data56\inf.db arj a -r -v1440 zaloha\zaloha%1 Data56\
+if exist Data57\inf.db arj a -r -v1440 zaloha\zaloha%1 Data57\
+if exist Data58\inf.db arj a -r -v1440 zaloha\zaloha%1 Data58\
+if exist Data59\inf.db arj a -r -v1440 zaloha\zaloha%1 Data59\
+rem-Data60-------------
+if exist Data60\inf.db arj a -r -v1440 zaloha\zaloha%1 Data60\
+if exist Data61\inf.db arj a -r -v1440 zaloha\zaloha%1 Data61\
+if exist Data62\inf.db arj a -r -v1440 zaloha\zaloha%1 Data62\
+if exist Data63\inf.db arj a -r -v1440 zaloha\zaloha%1 Data63\
+if exist Data64\inf.db arj a -r -v1440 zaloha\zaloha%1 Data64\
+if exist Data65\inf.db arj a -r -v1440 zaloha\zaloha%1 Data65\
+if exist Data66\inf.db arj a -r -v1440 zaloha\zaloha%1 Data66\
+if exist Data67\inf.db arj a -r -v1440 zaloha\zaloha%1 Data67\
+if exist Data68\inf.db arj a -r -v1440 zaloha\zaloha%1 Data68\
+if exist Data69\inf.db arj a -r -v1440 zaloha\zaloha%1 Data69\
+rem-Data70-------------
+if exist Data70\inf.db arj a -r -v1440 zaloha\zaloha%1 Data70\
+if exist Data71\inf.db arj a -r -v1440 zaloha\zaloha%1 Data71\
+if exist Data72\inf.db arj a -r -v1440 zaloha\zaloha%1 Data72\
+if exist Data73\inf.db arj a -r -v1440 zaloha\zaloha%1 Data73\
+if exist Data74\inf.db arj a -r -v1440 zaloha\zaloha%1 Data74\
+if exist Data75\inf.db arj a -r -v1440 zaloha\zaloha%1 Data75\
+if exist Data76\inf.db arj a -r -v1440 zaloha\zaloha%1 Data76\
+if exist Data77\inf.db arj a -r -v1440 zaloha\zaloha%1 Data77\
+if exist Data78\inf.db arj a -r -v1440 zaloha\zaloha%1 Data78\
+if exist Data79\inf.db arj a -r -v1440 zaloha\zaloha%1 Data79\
+rem-Data80-------------
+if exist Data80\inf.db arj a -r -v1440 zaloha\zaloha%1 Data80\
+if exist Data81\inf.db arj a -r -v1440 zaloha\zaloha%1 Data81\
+if exist Data82\inf.db arj a -r -v1440 zaloha\zaloha%1 Data82\
+if exist Data83\inf.db arj a -r -v1440 zaloha\zaloha%1 Data83\
+if exist Data84\inf.db arj a -r -v1440 zaloha\zaloha%1 Data84\
+if exist Data85\inf.db arj a -r -v1440 zaloha\zaloha%1 Data85\
+if exist Data86\inf.db arj a -r -v1440 zaloha\zaloha%1 Data86\
+if exist Data87\inf.db arj a -r -v1440 zaloha\zaloha%1 Data87\
+if exist Data88\inf.db arj a -r -v1440 zaloha\zaloha%1 Data88\
+if exist Data89\inf.db arj a -r -v1440 zaloha\zaloha%1 Data89\
+rem-Data90-------------
+if exist Data90\inf.db arj a -r -v1440 zaloha\zaloha%1 Data90\
+if exist Data91\inf.db arj a -r -v1440 zaloha\zaloha%1 Data91\
+if exist Data92\inf.db arj a -r -v1440 zaloha\zaloha%1 Data92\
+if exist Data93\inf.db arj a -r -v1440 zaloha\zaloha%1 Data93\
+if exist Data94\inf.db arj a -r -v1440 zaloha\zaloha%1 Data94\
+if exist Data95\inf.db arj a -r -v1440 zaloha\zaloha%1 Data95\
+if exist Data96\inf.db arj a -r -v1440 zaloha\zaloha%1 Data96\
+if exist Data97\inf.db arj a -r -v1440 zaloha\zaloha%1 Data97\
+if exist Data98\inf.db arj a -r -v1440 zaloha\zaloha%1 Data98\
+if exist Data99\inf.db arj a -r -v1440 zaloha\zaloha%1 Data99\
+rem-Disketa
+if %2==A copy zaloha\zaloha%1.arj a:
+if %2==B copy zaloha\zaloha%1.arj b:

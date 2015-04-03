@@ -1,0 +1,175 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Language Utility Library 1.0.1</title><meta name="generator" content="DocBook XSL Stylesheets V1.61.3"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="article" lang="en"><div class="titlepage"><div><div><h1 class="title"><a name="d0e3"></a>Language Utility Library 1.0.1</h1></div><div><h3 class="subtitle"><i>Delphi 3, 4, 5, 6, and Kylix Implementation</i></h3></div><div><div class="author"><h3 class="author"><span class="firstname">Dieter</span> <span class="surname">K&ouml;hler</span></h3></div></div><div><div class="legalnotice"><p>LICENSE</p><p>The contents of the Extended Document Object Model files are subject to the Mozilla Public License Version 1.1 (the "License"); you may not use this files except in compliance with the License. You may obtain a copy of the License at "http://www.mozilla.org/MPL/"</p><p>Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License.</p><p>The Original Code is "LangUtils.pas".</p><p>The Initial Developer of the Original Code is Dieter K&ouml;hler (Heidelberg, Germany, "http://www.philo.de/"). Portions created by the Initial Developer are Copyright (C) 1999-2003 Dieter K&ouml;hler. All Rights Reserved.</p><p>Alternatively, the contents of this files may be used under the terms of the GNU General Public License Version 2 or later (the "GPL"), in which case the provisions of the GPL are applicable instead of those above. If you wish to allow use of your version of this files only under the terms of the GPL, and not to allow others to use your version of this files under the terms of the MPL, indicate your decision by deleting the provisions above and replace them with the notice and other provisions required by the GPL. If you do not delete the provisions above, a recipient may use your version of this file under the terms of any one of the MPL or the GPL.</p></div></div><div><p class="pubdate">2003</p></div></div><div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><a href="#d0e38">Introduction</a></dt><dt><a href="#d0e55">Using the Unit</a></dt><dt><a href="#d0e60">ISO 639 Constants</a></dt><dd><dl><dt><a href="#d0e65">TIso639LanguageCode</a></dt><dt><a href="#d0e72">TIso639LanguageCodeSet</a></dt></dl></dd><dt><a href="#d0e79">ISO 639 Translation</a></dt><dd><dl><dt><a href="#d0e83">TIso639Info</a></dt></dl></dd><dt><a href="#d0e332">Helper Functions</a></dt><dd><dl><dt><a href="#d0e336">IsRFC3066LanguageTag</a></dt><dt><a href="#d0e360">IsSubLanguage</a></dt></dl></dd></dl></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e38"></a>Introduction</h2></div></div><div></div></div><p>The Language Utilities Library contains helper functions for ISO 639, ISO 639-2 and RFC 3066 language code processing. For further information about these standards see the relevant specifications:</p><div class="itemizedlist"><ul type="disc"><li><p>[ISO 639] ISO 639:1988 (E/F) - Code for the representation of names of languages - The International Organization for Standardization, 1st edition, 1988-04-01 Prepared by ISO/TC 37 - Terminology (principles and coordination).</p></li><li><p>[ISO 639-2] ISO 639-2:1998 - Codes for the representation of names of languages -- Part 2: Alpha-3 code  - edition 1, 1998-11-01, 66 pages, prepared by a Joint Working Group of ISO TC46/SC4 and ISO TC37/SC2.</p></li><li><p>[RFC 3066] Alvestrand, H.: "Tags for the Identification of Languages", RFC 3066, January 2001, see &lt;http://www.ietf.org/rfc/rfc3066.txt&gt;.</p></li></ul></div><p>The latest version of this software is available at &lt;http://www.philo.de/xml/&gt;.</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e55"></a>Using the Unit</h2></div></div><div></div></div><p>The Language Utilities Library does not contain any components to be registered. So using it from inside your own projects is very simple: Add "LangUtils" to the uses clause of your unit and make sure that the path to the location of the LangUtils.pas file is included in Delphi's list of library paths. To include it go to the Library section of Delphi's Environment Options dialog (see the menu item: "Tools/Environment Options ...").</p></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e60"></a>ISO 639 Constants</h2></div></div><div></div></div><p>ISO 639 defines a set of two-character codes for the representation of names of languages. The TIso639LanguageCode constants are used as an equivalent.</p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e65"></a>TIso639LanguageCode</h3></div></div><div></div></div><p>Defines the following constants for the representation of names of languages using the codes of ISO 639:</p><div class="literallayout"><p><br>
+		iso639_aa,&nbsp;//&nbsp;Afar<br>
+		iso639_ab,&nbsp;//&nbsp;Abkhazian<br>
+		iso639_af,&nbsp;//&nbsp;Afrikaans<br>
+		iso639_am,&nbsp;//&nbsp;Amharic<br>
+		iso639_ar,&nbsp;//&nbsp;Arabic<br>
+		iso639_as,&nbsp;//&nbsp;Assamese<br>
+		iso639_ay,&nbsp;//&nbsp;Aymara<br>
+		iso639_az,&nbsp;//&nbsp;Azerbaijani<br>
+<br>
+		iso639_ba,&nbsp;//&nbsp;Bashkir<br>
+		iso639_be,&nbsp;//&nbsp;Byelorussian<br>
+		iso639_bg,&nbsp;//&nbsp;Bulgarian<br>
+		iso639_bh,&nbsp;//&nbsp;Bihari<br>
+		iso639_bi,&nbsp;//&nbsp;Bislama<br>
+		iso639_bn,&nbsp;//&nbsp;Bengali;&nbsp;Bangla<br>
+		iso639_bo,&nbsp;//&nbsp;Tibetan<br>
+		iso639_br,&nbsp;//&nbsp;Breton<br>
+<br>
+		iso639_ca,&nbsp;//&nbsp;Catalan<br>
+		iso639_co,&nbsp;//&nbsp;Corsican<br>
+		iso639_cs,&nbsp;//&nbsp;Czech<br>
+		iso639_cy,&nbsp;//&nbsp;Welsh<br>
+<br>
+		iso639_da,&nbsp;//&nbsp;Danish<br>
+		iso639_de,&nbsp;//&nbsp;German<br>
+		iso639_dz,&nbsp;//&nbsp;Bhutani<br>
+<br>
+		iso639_el,&nbsp;//&nbsp;Greek<br>
+		iso639_en,&nbsp;//&nbsp;English<br>
+		iso639_eo,&nbsp;//&nbsp;Esperanto<br>
+		iso639_es,&nbsp;//&nbsp;Spanish<br>
+		iso639_et,&nbsp;//&nbsp;Estonian<br>
+		iso639_eu,&nbsp;//&nbsp;Basque<br>
+<br>
+		iso639_fa,&nbsp;//&nbsp;Persian<br>
+		iso639_fi,&nbsp;//&nbsp;Finnish<br>
+		iso639_fj,&nbsp;//&nbsp;Fiji<br>
+		iso639_fo,&nbsp;//&nbsp;Faeroese<br>
+		iso639_fr,&nbsp;//&nbsp;French<br>
+		iso639_fy,&nbsp;//&nbsp;Frisian<br>
+<br>
+		iso639_ga,&nbsp;//&nbsp;Irish<br>
+		iso639_gd,&nbsp;//&nbsp;Scots&nbsp;Gaelic<br>
+		iso639_gl,&nbsp;//&nbsp;Galician<br>
+		iso639_gn,&nbsp;//&nbsp;Guarani<br>
+		iso639_gu,&nbsp;//&nbsp;Gujarati<br>
+<br>
+		iso639_ha,&nbsp;//&nbsp;Hausa<br>
+		iso639_hi,&nbsp;//&nbsp;Hindi<br>
+		iso639_hr,&nbsp;//&nbsp;Croatian<br>
+		iso639_hu,&nbsp;//&nbsp;Hungarian<br>
+		iso639_hy,&nbsp;//&nbsp;Armenian<br>
+<br>
+		iso639_ia,&nbsp;//&nbsp;Interlingua<br>
+		iso639_ie,&nbsp;//&nbsp;Interlingue<br>
+		iso639_ik,&nbsp;//&nbsp;Inupiak<br>
+		iso639_in,&nbsp;//&nbsp;Indonesian<br>
+		iso639_is,&nbsp;//&nbsp;Icelandic<br>
+		iso639_it,&nbsp;//&nbsp;Italian<br>
+		iso639_iw,&nbsp;//&nbsp;Hebrew<br>
+<br>
+		iso639_ja,&nbsp;//&nbsp;Japanese<br>
+		iso639_ji,&nbsp;//&nbsp;Yiddish<br>
+		iso639_jw,&nbsp;//&nbsp;Javanese<br>
+<br>
+		iso639_ka,&nbsp;//&nbsp;Georgian<br>
+		iso639_kk,&nbsp;//&nbsp;Kazakh<br>
+		iso639_kl,&nbsp;//&nbsp;Greenlandic<br>
+		iso639_km,&nbsp;//&nbsp;Cambodian<br>
+		iso639_kn,&nbsp;//&nbsp;Kannada<br>
+		iso639_ko,&nbsp;//&nbsp;Korean<br>
+		iso639_ks,&nbsp;//&nbsp;Kashmiri<br>
+		iso639_ku,&nbsp;//&nbsp;Kurdish<br>
+		iso639_ky,&nbsp;//&nbsp;Kirghiz<br>
+<br>
+		iso639_la,&nbsp;//&nbsp;Latin<br>
+		iso639_ln,&nbsp;//&nbsp;Lingala<br>
+		iso639_lo,&nbsp;//&nbsp;Laothian<br>
+		iso639_lt,&nbsp;//&nbsp;Lithuanian<br>
+		iso639_lv,&nbsp;//&nbsp;Latvian,&nbsp;Lettish<br>
+<br>
+		iso639_mg,&nbsp;//&nbsp;Malagasy<br>
+		iso639_mi,&nbsp;//&nbsp;Maori<br>
+		iso639_mk,&nbsp;//&nbsp;Macedonian<br>
+		iso639_ml,&nbsp;//&nbsp;Malayalam<br>
+		iso639_mn,&nbsp;//&nbsp;Mongolian<br>
+		iso639_mo,&nbsp;//&nbsp;Moldavian<br>
+		iso639_mr,&nbsp;//&nbsp;Marathi<br>
+		iso639_ms,&nbsp;//&nbsp;Malay<br>
+		iso639_mt,&nbsp;//&nbsp;Maltese<br>
+		iso639_my,&nbsp;//&nbsp;Burmese<br>
+<br>
+		iso639_na,&nbsp;//&nbsp;Nauru<br>
+		iso639_ne,&nbsp;//&nbsp;Nepali<br>
+		iso639_nl,&nbsp;//&nbsp;Dutch<br>
+		iso639_no,&nbsp;//&nbsp;Norwegian<br>
+<br>
+		iso639_oc,&nbsp;//&nbsp;Occitan<br>
+		iso639_om,&nbsp;//&nbsp;(Afan)&nbsp;Oromo<br>
+		iso639_or,&nbsp;//&nbsp;Oriya<br>
+<br>
+		iso639_pa,&nbsp;//&nbsp;Punjabi<br>
+		iso639_pl,&nbsp;//&nbsp;Polish<br>
+		iso639_ps,&nbsp;//&nbsp;Pashto,&nbsp;Pushto<br>
+		iso639_pt,&nbsp;//&nbsp;Portuguese<br>
+<br>
+		iso639_qu,&nbsp;//&nbsp;Quechua<br>
+<br>
+		iso639_rm,&nbsp;//&nbsp;Rhaeto-Romance<br>
+		iso639_rn,&nbsp;//&nbsp;Kirundi<br>
+		iso639_ro,&nbsp;//&nbsp;Romanian<br>
+		iso639_ru,&nbsp;//&nbsp;Russian<br>
+		iso639_rw,&nbsp;//&nbsp;Kinyarwanda<br>
+<br>
+		iso639_sa,&nbsp;//&nbsp;Sanskrit<br>
+		iso639_sd,&nbsp;//&nbsp;Sindhi<br>
+		iso639_sg,&nbsp;//&nbsp;Sangro<br>
+		iso639_sh,&nbsp;//&nbsp;Serbo-Croatian<br>
+		iso639_si,&nbsp;//&nbsp;Singhalese<br>
+		iso639_sk,&nbsp;//&nbsp;Slovak<br>
+		iso639_sl,&nbsp;//&nbsp;Slovenian<br>
+		iso639_sm,&nbsp;//&nbsp;Samoan<br>
+		iso639_sn,&nbsp;//&nbsp;Shona<br>
+		iso639_so,&nbsp;//&nbsp;Somali<br>
+		iso639_sq,&nbsp;//&nbsp;Albanian<br>
+		iso639_sr,&nbsp;//&nbsp;Serbian<br>
+		iso639_ss,&nbsp;//&nbsp;Siswati<br>
+		iso639_st,&nbsp;//&nbsp;Sesotho<br>
+		iso639_su,&nbsp;//&nbsp;Sundanese<br>
+		iso639_sv,&nbsp;//&nbsp;Swedish<br>
+		iso639_sw,&nbsp;//&nbsp;Swahili<br>
+<br>
+		iso639_ta,&nbsp;//&nbsp;Tamil<br>
+		iso639_te,&nbsp;//&nbsp;Tegulu<br>
+		iso639_tg,&nbsp;//&nbsp;Tajik<br>
+		iso639_th,&nbsp;//&nbsp;Thai<br>
+		iso639_ti,&nbsp;//&nbsp;Tigrinya<br>
+		iso639_tk,&nbsp;//&nbsp;Turkmen<br>
+		iso639_tl,&nbsp;//&nbsp;Tagalog<br>
+		iso639_tn,&nbsp;//&nbsp;Setswana<br>
+		iso639_to,&nbsp;//&nbsp;Tonga<br>
+		iso639_tr,&nbsp;//&nbsp;Turkish<br>
+		iso639_ts,&nbsp;//&nbsp;Tsonga<br>
+		iso639_tt,&nbsp;//&nbsp;Tatar<br>
+		iso639_tw,&nbsp;//&nbsp;Twi<br>
+<br>
+		iso639_uk,&nbsp;//&nbsp;Ukrainian<br>
+		iso639_ur,&nbsp;//&nbsp;Urdu<br>
+		iso639_uz,&nbsp;//&nbsp;Uzbek<br>
+<br>
+		iso639_vi,&nbsp;//&nbsp;Vietnamese<br>
+		iso639_vo,&nbsp;//&nbsp;Volapuk<br>
+<br>
+		iso639_wo,&nbsp;//&nbsp;Wolof<br>
+<br>
+		iso639_xh,&nbsp;//&nbsp;Xhosa<br>
+<br>
+		iso639_yo,&nbsp;//&nbsp;Yoruba<br>
+<br>
+		iso639_zh,&nbsp;//&nbsp;Chinese<br>
+		iso639_zu&nbsp;&nbsp;//&nbsp;Zulu<br>
+&nbsp;&nbsp;</p></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e72"></a>TIso639LanguageCodeSet</h3></div></div><div></div></div><pre class="synopsis">TIso639LanguageCodeSet = set of TIso639LanguageCode;</pre><p>TIso639LanguageCodeSet defines a set of TIso639LanguageCode instances.</p></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e79"></a>ISO 639 Translation</h2></div></div><div></div></div><p></p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e83"></a>TIso639Info</h3></div></div><div></div></div><pre class="synopsis">TIso639Info = class(TPersistent)</pre><p>A TIso639Info object allows to translate ISO 639 symbols (e.g. 'en'), codes (e.g. iso639_en) and readable WideStrings (e.g. 'English') into each other.  A TIso639Info object can be assigned to a TSting or TUtilsWideStringList object, which then contains a list of all defined ISO 639 languages in the language specified in the <i class="parameter"><tt>NameLanguage</tt></i> property and optionally added the ISO 639 symbol in brackets if the value of the <i class="parameter"><tt>appendSymbolToName</tt></i> property is set to <i class="parameter"><tt>True</tt></i>; the associated objects of the items contain the index of the corresponding TIso639LanguageCode.</p><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e99"></a>Properties</h4></div></div><div></div></div><p><i class="parameter"><tt>AppendSymbolToName</tt></i> (Boolean): If set to <i class="parameter"><tt>True</tt></i>, the codeToName() function will append the ISO 639 symbol in square brackets to the returned WideString (e.g. 'English [en]'). The default value is <i class="parameter"><tt>False</tt></i>.</p><p><i class="parameter"><tt>NameLanguage</tt></i> (TIso639LanguageCode): Specifies the language used for the codeToName() and nameToCode() function. 
+      </p><div class="itemizedlist"><p class="title"><b>Exceptions on Setting</b></p><ul type="disc"><li><p>EConvertError: Raised if the specified language is not supported (see the description of the <i class="parameter"><tt>SupportedLanguages</tt></i> property.</p></li></ul></div><p>
+      </p><p><i class="parameter"><tt>SupportedLanguages</tt></i> (TIso639LanguageCodeSet) (readonly): A set of the languages supporting the <tt class="function">CodeToName</tt> and <tt class="function">NameToCode</tt> function.  Currently the only supported language is English (<i class="parameter"><tt>iso639_en</tt></i>).  Users may add more support in derived classes.</p></div><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e139"></a>Public Methods</h4></div></div><div></div></div><pre class="synopsis">constructor <tt class="function">Create</tt>;</pre><p>
+      Creates a new TIso639Info object.</p><pre class="synopsis">function <tt class="function">CodeToName</tt>(const Value: TIso639LanguageCode): WideString; virtual;</pre><p>
+      Translates the specified TIso639LanguageCode into a readable WideString. The language of the returned WideString is determined by the <i class="parameter"><tt>NameLanguage</tt></i> property. If the <i class="parameter"><tt>AppendSymbolToName</tt></i> flag is set to <i class="parameter"><tt>True</tt></i> the ISO 639 symbol is appended in square brackets.</p><p>Example: If <i class="parameter"><tt>NameLanguage</tt></i>  is set to <i class="parameter"><tt>iso639_en</tt></i> and <i class="parameter"><tt>AppendSymbolToName</tt></i> is <i class="parameter"><tt>True</tt></i> calling <tt class="function">CodeToName</tt>(iso639_de) returns 'German [de]'.</p><div class="itemizedlist"><p class="title"><b>Paramters</b></p><ul type="disc"><li><p><i class="parameter"><tt>Value</tt></i>: The TIso639LanguageCode to be translated.</p></li></ul></div><div class="itemizedlist"><p class="title"><b>Return Value</b></p><ul type="disc"><li><p>A human readable WideString containing the name of the specified language.</p></li></ul></div><pre class="synopsis">function <tt class="function">CodeToSymbol</tt>(const Value: TIso639LanguageCode): WideString; virtual;</pre><p>
+      Translates the specified TIso639LanguageCode into a WideString containing the corresponding ISO 639 symbol, e.g. <i class="parameter"><tt>iso639_en</tt></i> is translated into 'en'.</p><div class="itemizedlist"><p class="title"><b>Paramters</b></p><ul type="disc"><li><p><i class="parameter"><tt>Value</tt></i>: The TIso639LanguageCode to be translated.</p></li></ul></div><div class="itemizedlist"><p class="title"><b>Return Value</b></p><ul type="disc"><li><p>A WideString containing the code of the specified language.</p></li></ul></div><pre class="synopsis">function <tt class="function">NameToCode</tt>(const Value: WideString): WideString; TIso639LanguageCode;</pre><p>
+      Translates the specified human readable WideString into its corresponding TIso639LanguageCode.  The language of the specefied wideString is determined by the <i class="parameter"><tt>NameLanguage</tt></i> property.</p><p>The specified WideString is evaluated in the following way:  If it contains a semicolon (';'), only the text up to the semicolon is evaluated. If it contains no semicolon, but the character '[' and the character before it is a SPACE, then only the text up to this SPACE is evaluated.  If none of this is true, the whole text is evaluated.</p><p>The evaluation is case-sensitive, i.e. the first character of the specified WideString must be upper-case, the rest lower-case.</p><p>Example: If <i class="parameter"><tt>NameLanguage</tt></i> is set to <i class="parameter"><tt>iso639_en</tt></i> calling <tt class="function">NameToCode</tt>('German'), <tt class="function">NameToCode</tt>('German; Deutsch'), and <tt class="function">NameToCode</tt>('German [de]'), will all return <i class="parameter"><tt>iso639_de</tt></i>.  Instead, calling <tt class="function">NameToCode</tt>('german'), <tt class="function">NameToCode</tt>('German ; Deutsch'), nameToCode('de'), <tt class="function">NameToCode</tt>('[de]'), <tt class="function">NameToCode</tt>('German '), or <tt class="function">NameToCode</tt>('Deutsch; German') will raise an exception.</p><div class="itemizedlist"><p class="title"><b>Paramters</b></p><ul type="disc"><li><p><i class="parameter"><tt>Value</tt></i>: The human readable WideString to be translated.</p></li></ul></div><div class="itemizedlist"><p class="title"><b>Return Value</b></p><ul type="disc"><li><p>The TIso639LanguageCode of the specified
+           language.</p></li></ul></div><div class="itemizedlist"><p class="title"><b>Exceptions</b></p><ul type="disc"><li><p>EConvertError: Raised if an invalid ISO 639 language name
+           was specified.</p></li></ul></div><pre class="synopsis">function <tt class="function">SymbolToCode</tt>(const Value: WideString): WideString; TIso639LanguageCode;</pre><p>
+      Translates the specified symbol into its corresponding TIso639LanguageCode, e.g. <i class="parameter"><tt>'en'</tt></i> into <i class="parameter"><tt>iso639_en</tt></i>.  This function is case-sensitive, i.e. only lower-case values are accepted.</p><div class="itemizedlist"><p class="title"><b>Paramters</b></p><ul type="disc"><li><p><i class="parameter"><tt>Value</tt></i>: The ISO 639 symbol to be translated.</p></li></ul></div><div class="itemizedlist"><p class="title"><b>Return Value</b></p><ul type="disc"><li><p>The TIso639LanguageCode of the specified
+           language.</p></li></ul></div><div class="itemizedlist"><p class="title"><b>Exceptions</b></p><ul type="disc"><li><p>EConvertError: Raised if an invalid ISO 639 symbol was specified.  Note that this function is case-sensitive, i.e. only lower-case values are accepted.</p></li></ul></div></div></div></div><div class="sect1" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e332"></a>Helper Functions</h2></div></div><div></div></div><p></p><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e336"></a>IsRFC3066LanguageTag</h3></div></div><div></div></div><pre class="synopsis">function IsRFC3066LanguageTag(const S: string): Boolean;</pre><p>Tests whether the specified string is a valid language tag according to [RFC 3066].</p><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e343"></a>Parameters</h4></div></div><div></div></div><p><i class="parameter"><tt>S</tt></i>: The US-ASCII string to test.</p></div><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e350"></a>Return Value</h4></div></div><div></div></div><p><i class="parameter"><tt>True</tt></i> if the specified string is a valid language tag according to RFC 3066; <i class="parameter"><tt>False</tt></i> otherwise.</p></div></div><div class="sect2" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="d0e360"></a>IsSubLanguage</h3></div></div><div></div></div><pre class="synopsis">function IsSubLanguage(const Sublanguage, Superlanguage: WideString): Boolean;</pre><p>Tests whether the specified <i class="parameter"><tt>Sublanguage</tt></i> is the same as or is a sublanguage of the language specified by the <i class="parameter"><tt>Superlanguage</tt></i> parameter according to [RFC 3066].</p><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e373"></a>Parameters</h4></div></div><div></div></div><p><i class="parameter"><tt>Sublanguage</tt></i>: The sublanguage to test.</p><p><i class="parameter"><tt>Superlanguage</tt></i>: The superlanguage to test.</p></div><div class="sect3" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="d0e384"></a>Return Value</h4></div></div><div></div></div><p><i class="parameter"><tt>True</tt></i> if Superlanguage is equal to  Sublanguage ignoring case, or if there is some suffix starting with '-' such that Superlanguage is equal to Sublanguage ignoring that suffix of Sublanguage and ignoring case; <i class="parameter"><tt>False</tt></i> otherwise. For example IsSubLanguage('en-US','EN') returns <i class="parameter"><tt>True</tt></i>.</p></div></div></div></div></body></html>

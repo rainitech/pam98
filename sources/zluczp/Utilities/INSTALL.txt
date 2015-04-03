@@ -1,0 +1,43 @@
+************************************************************
+Installation Instructions for the Open XML Utilities Package
+************************************************************
+
+Compatibility Table
+-------------------
+
+The Open XML Utilities Package was tested with Delphi 3, 5, 6, and 7.  Which units also work under Delphi 4, Kylix and BCB is unknown.  The author welcomes reports about that matter.  Please mail to <service@philo.de>.  The following table shows which units are registered by each package:
+
+Utilities_D3.pkg
+  Included: AbnfUtils.pas, LangUtils.pas, UnicodeUtils.pas, UriUtils.pas, WideStrUtils.pas, XmlRulesUtils.pas.
+  Missing: AutoListUtils.pas, AutoStrCtrls.pas, ParserUtils.pas, TreeUtils.pas.
+  
+Utilities_D5.pkg
+  Included: AbnfUtils.pas, LangUtils.pas, ParserUtils.pas, TreeUtils.pas, UnicodeUtils.pas, UriUtils.pas, WideStrUtils.pas, XmlRulesUtils.pas.
+  Missing: AutoListUtils.pas, AutoStrCtrls.pas.
+  
+Utilities_D6.pkg
+  Included: AbnfUtils.pas, AutoListUtils.pas, AutoStrCtrls.pas, LangUtils.pas, ParserUtils.pas, TreeUtils.pas, UnicodeUtils.pas, UriUtils.pas, WideStrUtils.pas, XmlRulesUtils.pas.
+  Missing: In AutoStrCtrls.pas the TAutoStrTabControl component is not defined for Delphi 6.
+
+Utilities_D7.pkg
+  Included: AbnfUtils.pas, AutoListUtils.pas, AutoStrCtrls.pas, LangUtils.pas, ParserUtils.pas, TreeUtils.pas, UnicodeUtils.pas, UriUtils.pas, WideStrUtils.pas, XmlRulesUtils.pas.
+  Missing: Nothing.
+
+
+Installation Procedure
+----------------------
+
+1. Extract the zip-archive.
+2. Open the package file appropriate to your Delphi/Kylix version (ending with ".dpk") in the Delphi IDE.
+3. The loaded package is displayed by the Package editor.
+4. Modify the package options if necessary, e.g. to specify other than the standard output or search pathes.
+5. Click the Compile package speed button to compile the package.
+6. Click the Install package speed button to install the package.
+7. Close the package window, and next confirm that the modifications should be saved.
+ 
+
+Trouble Shooting
+----------------
+
+* The most frequent cause for troubles is that the .DCP and .DCU files created during compilation are not in the Delphi Library Path. Use Delphi's Environment options dialog to add the required directories to the Delphi Library Path.
+* If you were asked for a .BPL file when trying to install a package you will usually (i.e. unless you changed the output directory in the package options) find it in the BPL standard output directory which can be specified in Delphi's Environment options dialog.

@@ -1,0 +1,1 @@
+This example application was made with Delphi 7.  Whether it works with other Delphi, Kylix or BCB versions I do not know.  --  d.k.

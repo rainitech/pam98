@@ -1,0 +1,22 @@
+Misschien is dit een oplossing? Het komt uit de knownledge base. 
+
+Q. I am getting errors trying to preview reports with QuickReport 2 under Windows 2000 
+A. We do not support QuickReport 2 under Windows 2000, we only support QuickReport 3 under Windows 2000. You can get it to work, but you will need to change the TempFileName function in qrprintr.pas and recompile the package. 
+Replace the existing function with the following: 
+
+
+code:--------------------------------------------------------------------------------
+function TempFilename : string;
+var
+  AName,
+  ADir : array[0..255] of char;
+begin
+  GetTempPath(255, adir);
+  GetTempFilename(aDir, PChar('QRP'), 0, aName);
+  result := StrPas(aName);
+end;
+This is not supported but should take care of the problem.
+--------------------------------------------------------------------------------
+
+
+

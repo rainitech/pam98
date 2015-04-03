@@ -1,0 +1,1 @@
+brcc32 -ic:\"program files"\borland\"delphi 3"\lib pam.dpr

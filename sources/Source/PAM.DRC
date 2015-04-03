@@ -1,0 +1,1072 @@
+#define MyConsts_SMyNepNevyplnenyUdajDatumVznikuPoistenia 64992
+#define MyConsts_SMyNepNevyplnenyUdajDatumZanikuPoistenia 64993
+#define MyConsts_SMyNepNespravnaHodnotaPrePracovnyPomer 64994
+#define MyConsts_SMyBulzipNotInstalled 64995
+#define MyConsts_SMyVypPaskyEmailomTestMode 64996
+#define MyConsts_SMyVypPaskyEmailomProductionMode 64997
+#define MyConsts_SMyZamMaUrobeneVyplaty 65008
+#define MyConsts_SMyZamPohlavieNotValid 65009
+#define MyConsts_SMyZamFzUvazokNotValid 65010
+#define MyConsts_SMyZamFzTypZamNotValid 65011
+#define MyConsts_SMyZamTypZrazkyNotValid 65012
+#define MyConsts_SMyZamNemozeBytZtpBezZps 65013
+#define MyConsts_SMyZamZapocetChybaVystup 65014
+#define MyConsts_SMyZamZapocetChybnyVystup 65015
+#define MyConsts_SMyZamNemozeMatObidve 65016
+#define MyConsts_SMyZamKZPMusiBytVyplneny 65017
+#define MyConsts_SMyZamSidNotFound 65018
+#define MyConsts_SMyZamDatumMusiZacinatVAktRoku 65019
+#define MyConsts_SMyDetMesOdExpected 65020
+#define MyConsts_SMyDetMesDoExpected 65021
+#define MyConsts_SMyBonusNesuhlasi 65022
+#define MyConsts_SMyNepDatZanikuPoistMusiBytDoKoncaRoka2012 65023
+#define MyConsts_SMyVypUzExistuje 65024
+#define MyConsts_SMyVypVymazatVyplatu 65025
+#define MyConsts_SMyVypBudeDefinitivneZrusena 65026
+#define MyConsts_SMyVypVymazanieBoloZastavene 65027
+#define MyConsts_SMyVypOtazkaUplatnitZrazkovuDan 65028
+#define MyConsts_SMyVypOdpracDniTrebaVyplnit 65029
+#define MyConsts_SMyVypOdpracHodinyTrebaVyplnit 65030
+#define MyConsts_SMyVypPoloykaDohodyNesmieBytVyplnena 65031
+#define MyConsts_SMyVypTlacHPNotSelected 65032
+#define MyConsts_SMyVypTypPremiiInvalid 65033
+#define MyConsts_SMyZamUzExistuje 65034
+#define MyConsts_SMyZamNotFound 65035
+#define MyConsts_SMyZamUkoncenyPomer2 65036
+#define MyConsts_SMyZamVymazatPracovnika 65037
+#define MyConsts_SMyZamBudeDefinitivneZruseny 65038
+#define MyConsts_SMyZamVymazanieBoloZastavene 65039
+#define MyConsts_SMyRzpUzExistuje 65040
+#define MyConsts_SMyRzpVymazatZuctovanie 65041
+#define MyConsts_SMyRzpBudeDefinitivneZrusene 65042
+#define MyConsts_SMyRzpVymazanieBoloZastavene 65043
+#define MyConsts_SMyRzpNemenPred2002 65044
+#define MyConsts_SMyRzpNeexistuje 65045
+#define MyConsts_SMyRzpNeexistuje2 65046
+#define MyConsts_SMyRzpChybaHranicaPreNezdCiastku 65047
+#define MyConsts_SMyZdrOznamenieNeexistuje 65048
+#define MyConsts_SMyZdrDokladNeexistuje 65049
+#define MyConsts_SMyZdrVypPodkladovPreDoklad 65050
+#define MyConsts_SMyZdrVypPodkladovPreDokladHotovo 65051
+#define MyConsts_SMyZdrVypPodkladovChyba 65052
+#define MyConsts_SMyZukVymazatZuctovanie 65053
+#define MyConsts_SMyZukBudeDefinitivneZrusene 65054
+#define MyConsts_SMyZukVymazanieBoloZastavene 65055
+#define MyConsts_SMyCisDeleteQuestion 65056
+#define MyConsts_SMyCisDeleteStopped 65057
+#define MyConsts_SMyCisDeleteNotAllowed 65058
+#define MyConsts_SMyCisKeyViolation 65059
+#define MyConsts_SMyCisDuplicitnyZaznam 65060
+#define MyConsts_SMyCisInsertNotAllowed 65061
+#define MyConsts_SMyCisInstituciaNotValid 65062
+#define MyConsts_SMyCisStrediskoJednaMusiZostat 65063
+#define MyConsts_SMyHsvPocetZauctovanych 65064
+#define MyConsts_SMyHsvOtazkaSpustit 65065
+#define MyConsts_SMyHsvOtazkaUkoncit 65066
+#define MyConsts_SMyRepExecError 65067
+#define MyConsts_SMyRepJedenPracovnik 65068
+#define MyConsts_SMyRepNotFoundVP2EMAIL 65069
+#define MyConsts_SMyRzpZaciatok 65070
+#define MyConsts_SMyRzzpZaciatok 65071
+#define MyConsts_SMyAppDovodPreruseniaMusiBytVyplneny 65072
+#define MyConsts_SMyAppNoRowNotSelected 65073
+#define MyConsts_SMyAppShowRowSelected 65074
+#define MyConsts_SMyAppBadRcLength 65075
+#define MyConsts_SMyAppNotFoundVykazZP 65076
+#define MyConsts_SMyAppRocneZuctZpAzOdRoku2006 65077
+#define MyConsts_SMyAppRocneZuctZlyRok 65078
+#define MyConsts_SMyAppVD_PDF_Hotovo 65079
+#define MyConsts_SMyAppZalozitNovuFirmu 65080
+#define MyConsts_SMyAppItemIsRequired 65081
+#define MyConsts_SMyAppCompleted 65082
+#define MyConsts_SMyAppSpustitRocneHlasenieDU 65083
+#define MyConsts_SMyAppStatutarNeplatiGarancneOd_01jan2014 65084
+#define MyConsts_SMyAppGenerovatAdresneStitky 65085
+#define MyConsts_SMyAppAdresneStitkyHotovo 65086
+#define MyConsts_SMyAppKontrolaBonusuHotovo 65087
+#define MyConsts_SMyAppKodNieJeVyplneny 65088
+#define MyConsts_SMyAppKodNieJeCislo 65089
+#define MyConsts_SMyAppNedaSaNastavitRok 65090
+#define MyConsts_SMyAppRokUzExistuje 65091
+#define MyConsts_SMyAppZalozenieRokuUspech 65092
+#define MyConsts_SMyAppZalozenieRokuNeuspech 65093
+#define MyConsts_SMyAppOtazkaPridatRok 65094
+#define MyConsts_SMyAppZauctovatPreplatkyDane 65095
+#define MyConsts_SMyAppZauctovatPreplatkyZP 65096
+#define MyConsts_SMyAppNeexistujeRZP 65097
+#define MyConsts_SMyAppChybaPriZauctovaniPreplatkovDane 65098
+#define MyConsts_SMyAppChybaPriZauctovaniPreplatkovZP 65099
+#define MyConsts_SMyAppZdravFilesGenerated 65100
+#define MyConsts_SMyAppZdravRzpFilesGenerated 65101
+#define MyConsts_SMyAppZdravFilesNotGenerated 65102
+#define MyConsts_SMyAppDovodPreruseniaNemaBytVyplneny 65103
+#define MyConsts_SMyAppFileNotFound 65104
+#define MyConsts_SMyAppDanovePasmaNotFound 65105
+#define MyConsts_SMyAppNastavitDanovePasma 65106
+#define MyConsts_SMyAppNastavitParametreRoku 65107
+#define MyConsts_SMyAppNaozajVymazatHromPrikaz 65108
+#define MyConsts_SMyAppZakazRobitZmeny 65109
+#define MyConsts_SMyAppZakazRobitZmenyMimoAktMesiaca 65110
+#define MyConsts_SMyAppPreniestZmenyDoVyplat 65111
+#define MyConsts_SMyAppNaozajPrepocitatVyplaty 65112
+#define MyConsts_SMyAppNaozajRozdelitDan 65113
+#define MyConsts_SMyAppZakazRobitHsv 65114
+#define MyConsts_SMyAppLenPoslednyMesiacStvrtroka 65115
+#define MyConsts_SMyAppVytvoritNovyXml 65116
+#define MyConsts_SMyAppSpustitVypocetCDM 65117
+#define MyConsts_SMyAppVypocetCDM_Hotovo 65118
+#define MyConsts_SMyAppTypRiadkuNieJeVybraty 65119
+#define MyConsts_SMyAppOtazkaGenerujHP 65120
+#define MyConsts_SMyAppGenerujHPNotSelected 65121
+#define MyConsts_SMyAppGenerujHPCompleted 65122
+#define MyConsts_SMyAppHPCompletedXml 65123
+#define MyConsts_SMyAppOtazkaBoloRocneZuctovanieVTomtoMesiaci 65124
+#define MyConsts_SMyAppDuVykCompletedXml 65125
+#define MyConsts_SMyAppHPCompletedVub 65126
+#define MyConsts_SMyAppHPBadCisloU 65127
+#define MyConsts_SMyAppHPNevyplnenyDatumSplatnosti 65128
+#define MyConsts_SMyAppPriznakUctovatInvalid 65129
+#define MyConsts_SMyAppCreateFileFailed 65130
+#define MyConsts_SMyAppFileCreated 65131
+#define MyConsts_SMyAppRunExcel 65132
+#define MyConsts_SMyAppRunRTF 65133
+#define MyConsts_SMyAppHpidIsNull 65134
+#define MyConsts_SMyAppParameterNotFound 65135
+#define MyConsts_SMyAppOtazkaZrusitRegistraciu 65136
+#define MyConsts_SMyAppOtazkaNaozajZrusit 65137
+#define MyConsts_SMyAppRegistraciaZrusena 65138
+#define MyConsts_SMyAppRegistraciaNejdeZrusit 65139
+#define MyConsts_SMyAppPridanieFirmyUspech 65140
+#define MyConsts_SMyApppridanieFirmyNeuspech 65141
+#define MyConsts_SMyAppZrusenieFirmyPopis 65142
+#define MyConsts_SMyAppZrusenieFirmyUspech 65143
+#define MyConsts_SMyAppZrusenieFirmyNeuspech 65144
+#define MyConsts_SMyAppZrusenieFirmyOtvorena 65145
+#define MyConsts_SMyAppZrusenieTlacovychDefinicii 65146
+#define MyConsts_SMyAppIbaMultiverzia 65147
+#define MyConsts_SMyAppHintPoistenie 65148
+#define MyConsts_SMyAppHintPoistenie2 65149
+#define MyConsts_SMyAppHintVynimkaVZ 65150
+#define MyConsts_SMyAppChybaHlavickaHP 65151
+#define MyConsts_SMyAppNaozajSpustitGfkZmenaNaDohodarov 65152
+#define MyConsts_SMyAppGfkGarancneHotovo 65153
+#define MyConsts_SMyAppXenon98NaozajSpustit 65154
+#define MyConsts_SMyAppXenon98Hotovo 65155
+#define MyConsts_SMyAppAccessImportHotovo 65156
+#define MyConsts_SMyAppImportAnketarovNaozajSpustit 65157
+#define MyConsts_SMyAppImportVyplatNaozajSpustit 65158
+#define MyConsts_SMyAppVymazVyplatAnketarov 65159
+#define MyConsts_SMyAppRunZalohovanie 65160
+#define MyConsts_SMyAppRunZalohovanieVynutene 65161
+#define MyConsts_SMyAppObnovaVyber 65162
+#define MyConsts_SMyAppXmlVyber 65163
+#define MyConsts_SMyAppRunObnova 65164
+#define MyConsts_SMyAppRunObnovaCommon 65165
+#define MyConsts_SMyAppIbaJednoStredisko 65166
+#define MyConsts_SMyAppNesuhlasDatumovehoIntervalu 65167
+#define MyConsts_SMyAppVypNpCancel 65168
+#define MyConsts_SMyAppVypNpZleObdobie 65169
+#define MyConsts_SMyAppVypNpDuplicitnyZaznam 65170
+#define MyConsts_SMyAppZrvAzPoZmeneVyp 65171
+#define MyConsts_SMyAppHsuAzPoZmeneVyp 65172
+#define MyConsts_SMyAppCloseForm 65173
+#define MyConsts_SMyAppTerminate 65174
+#define MyConsts_SMyAppZlyhanieDB 65175
+#define MyConsts_SMyAppLimitExceeded 65176
+#define MyConsts_SMyAppDataNotFound 65177
+#define MyConsts_SMyAppUserWantInsert 65178
+#define MyConsts_SMyAppStopUserWantInsert 65179
+#define MyConsts_SMyAppReportIsEmpty 65180
+#define MyConsts_SMyAppReportShowFailed 65181
+#define MyConsts_SMyAppOnlyHalfValueAllowed 65182
+#define MyConsts_SMyAppNaozajSpustitGfkGarancne 65183
+#define MyConsts_SMyAppInvalidValue 65184
+#define MyConsts_SMyAppInvalid2Value 65185
+#define MyConsts_SMyAppOnlyForExtendedVersion 65186
+#define MyConsts_SMyAppNewPasswordNotSame 65187
+#define MyConsts_SMyAppInvalidPassword 65188
+#define MyConsts_SMyAppPasswordSuccesfullyChanged 65189
+#define MyConsts_SMyAppPasswordNotChanged 65190
+#define MyConsts_SMyAppInvalidLogin 65191
+#define MyConsts_SMyAppInvalidLonginteger 65192
+#define MyConsts_SMyAppNotRegistered 65193
+#define MyConsts_SMyAppInvalidRegKey 65194
+#define MyConsts_SMyAppMocVelaPokusov 65195
+#define MyConsts_SMyAppCannotEdit 65196
+#define MyConsts_SMyAppEditMode 65197
+#define MyConsts_SMyAppZrvCancel 65198
+#define MyConsts_SMyAppHsuCancel 65199
+#define BdeConst_SInvalidAliasName 65200
+#define BdeConst_SNoFieldAccess 65201
+#define BdeConst_SUntitled 65202
+#define BdeConst_SNoProvider 65203
+#define ComStrs_sTabAccessError 65204
+#define ComStrs_sPageIndexError 65205
+#define ComStrs_sInvalidComCtl32 65206
+#define ComStrs_sDateTimeMax 65207
+#define ComStrs_sDateTimeMin 65208
+#define ComStrs_sNeedAllowNone 65209
+#define ComObj_SOleError 65210
+#define ComObj_SNoMethod 65211
+#define ComObj_SVarNotObject 65212
+#define UnicodeUtils_SOddSizeInvalid 65213
+#define UnicodeUtils_STargetNil 65214
+#define MyConsts_SMyAppInvalidObdobie4Demo 65215
+#define BdeConst_SHandleError 65216
+#define BdeConst_SFieldUndefinedType 65217
+#define BdeConst_SFieldUnsupportedType 65218
+#define BdeConst_SCompositeIndexError 65219
+#define BdeConst_SEmptySQLStatement 65220
+#define BdeConst_SNoParameterValue 65221
+#define BdeConst_SParameterNotFound 65222
+#define BdeConst_SParamTooBig 65223
+#define BdeConst_SLoginError 65224
+#define BdeConst_SInitError 65225
+#define BdeConst_SIDAPILangID 65226
+#define BdeConst_SBDEError 65227
+#define BdeConst_SInvalidVersion 65228
+#define BdeConst_SIndexDoesNotExist 65229
+#define BdeConst_SNoTableName 65230
+#define BdeConst_SNoCachedUpdates 65231
+#define DbConsts_SRefreshRecord 65232
+#define DbConsts_SDeleteRecordQuestion 65233
+#define DbConsts_SDeleteMultipleRecordsQuestion 65234
+#define DbConsts_SRecordNotFound 65235
+#define DbConsts_SDataSourceFixed 65236
+#define DbConsts_SNotReplicatable 65237
+#define DbConsts_SPropDefByLookup 65238
+#define DbConsts_STooManyColumns 65239
+#define BdeConst_SDuplicateDatabaseName 65240
+#define BdeConst_SDuplicateSessionName 65241
+#define BdeConst_SInvalidSessionName 65242
+#define BdeConst_SDatabaseNameMissing 65243
+#define BdeConst_SSessionNameMissing 65244
+#define BdeConst_SDatabaseOpen 65245
+#define BdeConst_SDatabaseHandleSet 65246
+#define BdeConst_SSessionActive 65247
+#define DbConsts_SExprBadNullTest 65248
+#define DbConsts_SExprRangeError 65249
+#define DbConsts_SExprNotBoolean 65250
+#define DbConsts_SExprIncorrect 65251
+#define DbConsts_SExprNothing 65252
+#define DbConsts_STextFalse 65253
+#define DbConsts_STextTrue 65254
+#define DbConsts_SFirstRecord 65255
+#define DbConsts_SPriorRecord 65256
+#define DbConsts_SNextRecord 65257
+#define DbConsts_SLastRecord 65258
+#define DbConsts_SInsertRecord 65259
+#define DbConsts_SDeleteRecord 65260
+#define DbConsts_SEditRecord 65261
+#define DbConsts_SPostEdit 65262
+#define DbConsts_SCancelEdit 65263
+#define DbConsts_SDataSourceChange 65264
+#define DbConsts_SDataSetOpen 65265
+#define DbConsts_SNotEditing 65266
+#define DbConsts_SDataSetClosed 65267
+#define DbConsts_SDataSetEmpty 65268
+#define DbConsts_SDataSetReadOnly 65269
+#define DbConsts_SAutoSessionExclusive 65270
+#define DbConsts_SAutoSessionExists 65271
+#define DbConsts_SAutoSessionActive 65272
+#define DbConsts_SExprTermination 65273
+#define DbConsts_SExprNameError 65274
+#define DbConsts_SExprStringError 65275
+#define DbConsts_SExprInvalidChar 65276
+#define DbConsts_SExprNoRParen 65277
+#define DbConsts_SExprExpected 65278
+#define DbConsts_SExprBadField 65279
+#define DbConsts_SFieldTypeMismatch 65280
+#define DbConsts_SInvalidVarByteArray 65281
+#define DbConsts_SFieldOutOfRange 65282
+#define DbConsts_SBCDOverflow 65283
+#define DbConsts_SFieldRequired 65284
+#define DbConsts_SDataSetMissing 65285
+#define DbConsts_SInvalidCalcType 65286
+#define DbConsts_SFieldReadOnly 65287
+#define DbConsts_SFieldIndexError 65288
+#define DbConsts_SNoFieldIndexes 65289
+#define DbConsts_SNotIndexField 65290
+#define DbConsts_SIndexFieldMissing 65291
+#define DbConsts_SDuplicateIndexName 65292
+#define DbConsts_SNoIndexForFields 65293
+#define DbConsts_SCircularDataLink 65294
+#define DbConsts_SLookupInfoError 65295
+#define Consts_SRegGetDataFailed 65296
+#define Consts_SDuplicateMenus 65297
+#define Consts_SPictureLabel 65298
+#define Consts_SPictureDesc 65299
+#define Consts_SPreviewLabel 65300
+#define DbConsts_SInvalidFieldSize 65301
+#define DbConsts_SUnknownFieldType 65302
+#define DbConsts_SFieldNameMissing 65303
+#define DbConsts_SDuplicateFieldName 65304
+#define DbConsts_SFieldNotFound 65305
+#define DbConsts_SFieldAccessError 65306
+#define DbConsts_SFieldValueError 65307
+#define DbConsts_SFieldRangeError 65308
+#define DbConsts_SInvalidIntegerValue 65309
+#define DbConsts_SInvalidBoolValue 65310
+#define DbConsts_SInvalidFloatValue 65311
+#define Consts_srNone 65312
+#define Consts_SOutOfRange 65313
+#define Consts_sAllFilter 65314
+#define Consts_SInsertLineError 65315
+#define Consts_SCannotCreateDir 65316
+#define Consts_SInvalidClipFmt 65317
+#define Consts_SIconToClipboard 65318
+#define Consts_SDefault 65319
+#define Consts_SInvalidMemoSize 65320
+#define Consts_SInvalidPrinterOp 65321
+#define Consts_SNoDefaultPrinter 65322
+#define Consts_SIniFileWriteError 65323
+#define Consts_SBitsIndexError 65324
+#define Consts_SInvalidRegType 65325
+#define Consts_SRegCreateFailed 65326
+#define Consts_SRegSetDataFailed 65327
+#define Consts_SmkcEsc 65328
+#define Consts_SmkcEnter 65329
+#define Consts_SmkcSpace 65330
+#define Consts_SmkcPgUp 65331
+#define Consts_SmkcPgDn 65332
+#define Consts_SmkcEnd 65333
+#define Consts_SmkcHome 65334
+#define Consts_SmkcLeft 65335
+#define Consts_SmkcUp 65336
+#define Consts_SmkcRight 65337
+#define Consts_SmkcDown 65338
+#define Consts_SmkcIns 65339
+#define Consts_SmkcDel 65340
+#define Consts_SmkcShift 65341
+#define Consts_SmkcCtrl 65342
+#define Consts_SmkcAlt 65343
+#define Consts_SMsgDlgError 65344
+#define Consts_SMsgDlgInformation 65345
+#define Consts_SMsgDlgConfirm 65346
+#define Consts_SMsgDlgYes 65347
+#define Consts_SMsgDlgNo 65348
+#define Consts_SMsgDlgOK 65349
+#define Consts_SMsgDlgCancel 65350
+#define Consts_SMsgDlgHelp 65351
+#define Consts_SMsgDlgAbort 65352
+#define Consts_SMsgDlgRetry 65353
+#define Consts_SMsgDlgIgnore 65354
+#define Consts_SMsgDlgAll 65355
+#define Consts_SMsgDlgNoToAll 65356
+#define Consts_SMsgDlgYesToAll 65357
+#define Consts_SmkcBkSp 65358
+#define Consts_SmkcTab 65359
+#define Consts_SCannotDragForm 65360
+#define Consts_SPutObjectError 65361
+#define Consts_SVMetafiles 65362
+#define Consts_SVEnhMetafiles 65363
+#define Consts_SVIcons 65364
+#define Consts_SVBitmaps 65365
+#define Consts_SGridTooLarge 65366
+#define Consts_STooManyDeleted 65367
+#define Consts_SIndexOutOfRange 65368
+#define Consts_SFixedColTooBig 65369
+#define Consts_SFixedRowTooBig 65370
+#define Consts_SInvalidStringGridOp 65371
+#define Consts_SInvalidProperty 65372
+#define Consts_SMaskErr 65373
+#define Consts_SMaskEditErr 65374
+#define Consts_SMsgDlgWarning 65375
+#define Consts_SPrinterIndexError 65376
+#define Consts_SInvalidPrinter 65377
+#define Consts_SDeviceOnPort 65378
+#define Consts_SGroupIndexTooLow 65379
+#define Consts_SNoMDIForm 65380
+#define Consts_SControlParentSetToSelf 65381
+#define Consts_SOKButton 65382
+#define Consts_SCancelButton 65383
+#define Consts_SYesButton 65384
+#define Consts_SNoButton 65385
+#define Consts_SHelpButton 65386
+#define Consts_SCloseButton 65387
+#define Consts_SIgnoreButton 65388
+#define Consts_SRetryButton 65389
+#define Consts_SAbortButton 65390
+#define Consts_SAllButton 65391
+#define Consts_SImageReadFail 65392
+#define Consts_SImageWriteFail 65393
+#define Consts_SWindowDCError 65394
+#define Consts_SWindowClass 65395
+#define Consts_SCannotFocus 65396
+#define Consts_SParentRequired 65397
+#define Consts_SMDIChildNotVisible 65398
+#define Consts_SVisibleChanged 65399
+#define Consts_SCannotShowModal 65400
+#define Consts_SPropertyOutOfRange 65401
+#define Consts_SMenuIndexError 65402
+#define Consts_SMenuReinserted 65403
+#define Consts_SMenuNotFound 65404
+#define Consts_SNoTimers 65405
+#define Consts_SNotPrinting 65406
+#define Consts_SPrinting 65407
+#define Consts_SReadOnlyProperty 65408
+#define Consts_SPropertyException 65409
+#define Consts_SAncestorNotFound 65410
+#define Consts_SInvalidBitmap 65411
+#define Consts_SInvalidIcon 65412
+#define Consts_SInvalidMetafile 65413
+#define Consts_SChangeIconSize 65414
+#define Consts_SOleGraphic 65415
+#define Consts_SUnknownExtension 65416
+#define Consts_SUnknownClipboardFormat 65417
+#define Consts_SOutOfResources 65418
+#define Consts_SNoCanvasHandle 65419
+#define Consts_SInvalidImageSize 65420
+#define Consts_SInvalidImageList 65421
+#define Consts_SReplaceImage 65422
+#define Consts_SImageIndexError 65423
+#define Consts_SMemoryStreamError 65424
+#define Consts_SCantWriteResourceStreamError 65425
+#define Consts_SClassNotFound 65426
+#define Consts_SInvalidImage 65427
+#define Consts_SResNotFound 65428
+#define Consts_SListIndexError 65429
+#define Consts_SListCapacityError 65430
+#define Consts_SListCountError 65431
+#define Consts_SSortedListError 65432
+#define Consts_SDuplicateString 65433
+#define Consts_SDuplicateName 65434
+#define Consts_SInvalidName 65435
+#define Consts_SDuplicateClass 65436
+#define Consts_SInvalidPropertyValue 65437
+#define Consts_SInvalidPropertyPath 65438
+#define Consts_SUnknownProperty 65439
+#define SysUtils_SShortDayNameWed 65440
+#define SysUtils_SShortDayNameThu 65441
+#define SysUtils_SShortDayNameFri 65442
+#define SysUtils_SShortDayNameSat 65443
+#define SysUtils_SLongDayNameSun 65444
+#define SysUtils_SLongDayNameMon 65445
+#define SysUtils_SLongDayNameTue 65446
+#define SysUtils_SLongDayNameWed 65447
+#define SysUtils_SLongDayNameThu 65448
+#define SysUtils_SLongDayNameFri 65449
+#define SysUtils_SLongDayNameSat 65450
+#define Consts_SAssignError 65451
+#define Consts_SFCreateError 65452
+#define Consts_SFOpenError 65453
+#define Consts_SReadError 65454
+#define Consts_SWriteError 65455
+#define SysUtils_SShortMonthNameDec 65456
+#define SysUtils_SLongMonthNameJan 65457
+#define SysUtils_SLongMonthNameFeb 65458
+#define SysUtils_SLongMonthNameMar 65459
+#define SysUtils_SLongMonthNameApr 65460
+#define SysUtils_SLongMonthNameMay 65461
+#define SysUtils_SLongMonthNameJun 65462
+#define SysUtils_SLongMonthNameJul 65463
+#define SysUtils_SLongMonthNameAug 65464
+#define SysUtils_SLongMonthNameSep 65465
+#define SysUtils_SLongMonthNameOct 65466
+#define SysUtils_SLongMonthNameNov 65467
+#define SysUtils_SLongMonthNameDec 65468
+#define SysUtils_SShortDayNameSun 65469
+#define SysUtils_SShortDayNameMon 65470
+#define SysUtils_SShortDayNameTue 65471
+#define SysUtils_SAbstractError 65472
+#define SysUtils_SModuleAccessViolation 65473
+#define SysUtils_SWin32Error 65474
+#define SysUtils_SUnkWin32Error 65475
+#define SysUtils_SNL 65476
+#define SysUtils_SShortMonthNameJan 65477
+#define SysUtils_SShortMonthNameFeb 65478
+#define SysUtils_SShortMonthNameMar 65479
+#define SysUtils_SShortMonthNameApr 65480
+#define SysUtils_SShortMonthNameMay 65481
+#define SysUtils_SShortMonthNameJun 65482
+#define SysUtils_SShortMonthNameJul 65483
+#define SysUtils_SShortMonthNameAug 65484
+#define SysUtils_SShortMonthNameSep 65485
+#define SysUtils_SShortMonthNameOct 65486
+#define SysUtils_SShortMonthNameNov 65487
+#define SysUtils_SInvalidFormat 65488
+#define SysUtils_SArgumentMissing 65489
+#define SysUtils_SInvalidVarCast 65490
+#define SysUtils_SInvalidVarOp 65491
+#define SysUtils_SDispatchError 65492
+#define SysUtils_SReadAccess 65493
+#define SysUtils_SWriteAccess 65494
+#define SysUtils_SResultTooLong 65495
+#define SysUtils_SFormatTooLong 65496
+#define SysUtils_SVarArrayCreate 65497
+#define SysUtils_SVarNotArray 65498
+#define SysUtils_SVarArrayBounds 65499
+#define SysUtils_SExternalException 65500
+#define SysUtils_SAssertionFailed 65501
+#define SysUtils_SIntfCastError 65502
+#define SysUtils_SAssertError 65503
+#define SysUtils_SDivByZero 65504
+#define SysUtils_SRangeError 65505
+#define SysUtils_SIntOverflow 65506
+#define SysUtils_SInvalidOp 65507
+#define SysUtils_SZeroDivide 65508
+#define SysUtils_SOverflow 65509
+#define SysUtils_SUnderflow 65510
+#define SysUtils_SInvalidPointer 65511
+#define SysUtils_SInvalidCast 65512
+#define SysUtils_SAccessViolation 65513
+#define SysUtils_SStackOverflow 65514
+#define SysUtils_SControlC 65515
+#define SysUtils_SPrivilege 65516
+#define SysUtils_SOperationAborted 65517
+#define SysUtils_SException 65518
+#define SysUtils_SExceptTitle 65519
+#define SysUtils_SInvalidInteger 65520
+#define SysUtils_SInvalidFloat 65521
+#define SysUtils_SInvalidDate 65522
+#define SysUtils_SInvalidTime 65523
+#define SysUtils_SInvalidDateTime 65524
+#define SysUtils_STimeEncodeError 65525
+#define SysUtils_SDateEncodeError 65526
+#define SysUtils_SOutOfMemory 65527
+#define SysUtils_SInOutError 65528
+#define SysUtils_SFileNotFound 65529
+#define SysUtils_SInvalidFilename 65530
+#define SysUtils_STooManyOpenFiles 65531
+#define SysUtils_SAccessDenied 65532
+#define SysUtils_SEndOfFile 65533
+#define SysUtils_SDiskFull 65534
+#define SysUtils_SInvalidInput 65535
+STRINGTABLE
+BEGIN
+	MyConsts_SMyNepNevyplnenyUdajDatumVznikuPoistenia,	"Nevyplnen\xfd \xfadaj : D\xe1tum vzniku poistenia"
+	MyConsts_SMyNepNevyplnenyUdajDatumZanikuPoistenia,	"Nevyplnen\xfd \xfadaj : D\xe1tum z\xe1niku poistenia"
+	MyConsts_SMyNepNespravnaHodnotaPrePracovnyPomer,	"Nespr\xe1vna hodnota pre typ pracovn\xe9ho pomeru, povolen\xe9 hodnoty s\xfa: 1 - pracovn\xfd pomer na dobu neur\xe8it\xfa, 2 - pracovn\xfd pomer na dobu ur\xe8it\xfa"
+	MyConsts_SMyBulzipNotInstalled,	"Chyba: Nie je mo\x9en\xe9 vykona\x9d t\xfato akciu. Akcia vy\x9eaduje aby bol nain\x9atalovan\xfd ovl\xe1da\xe8 tla\xe8iarne Bullzip PDF Printer."
+	MyConsts_SMyVypPaskyEmailomTestMode,	"\x8eel\xe1te si spusti\x9d zaslanie mailov v testovacom re\x9eime na Vami uveden\xfa adresu v parametroch zamestn\xe1vate\xbea pr\xe1ve teraz ?\r\n\r\n(Bude zaslan\xfdch max.5 mailov)"
+	MyConsts_SMyVypPaskyEmailomProductionMode,	"\x8eel\xe1te si spusti\x9d zaslanie v\xfdplatn\xfdch p\xe1sok mailom Va\x9aim zemestnancom pr\xe1ve teraz ?\r\n\r\nPotvr\xefte len ak prebehol test a skon\xe8il \xfaspe\x9ane!"
+	MyConsts_SMyZamMaUrobeneVyplaty,	"Zamestnanca nie je mo\x9en\xe9 zmaza\x9d dovtedy, pok\xfdm nie s\xfa vymazan\xe9 jeho v\xfdplaty. Ak skon\xe8il pracovn\xfd pomer zamestnanca, sta\xe8\xed nastavi\x9d polo\x9eku \"D\xe1tum ukon\xe8enia\",nepou\x9e\xedva sa vo\xbeba vymazanie zamestnanca"
+	MyConsts_SMyZamPohlavieNotValid,	"Nespr\xe1vna hodnota. Povolen\xe9 hodnoty s\xfa M(mu\x9e) a Z(\x9eena)."
+	MyConsts_SMyZamFzUvazokNotValid,	"Nespr\xe1vna hodnota. Povolen\xe9 hodnoty s\xfa 0,1,2 a 3"
+	MyConsts_SMyZamFzTypZamNotValid,	"Nespr\xe1vna hodnota. Povolen\xe9 hodnoty s\xfa O(ostatn\xed),Z(ob\xe8an so ZPS) a D(d\xf4chodca)."
+	MyConsts_SMyZamTypZrazkyNotValid,	"Nespr\xe1vna hodnota. Povolen\xe9 hodnoty s\xfa P(pois\x9dov\xf2a),O(odbory),Y(p\xf4\x9ei\xe8ky),S(staveb.sporenie) a X(in\xe9)."
+	MyConsts_SMyZamNemozeBytZtpBezZps,	"Najsk\xf4r je potrebn\xe9 nastavi\x9d zmenen\xfa pracovn\xfa schopnos\x9d."
+	MyConsts_SMyZamZapocetChybaVystup,	"Nie je mo\x9en\xe9 vytla\xe8i\x9d z\xe1po\xe8tov\xfd list. Pracovn\xedk nem\xe1 vyplnen\xfd d\xe1tum v\xfdstupu."
+	MyConsts_SMyZamZapocetChybnyVystup,	"Nie je mo\x9en\xe9 vytla\xe8i\x9d z\xe1po\xe8tov\xfd list. Pracovn\xedk m\xe1 nespr\xe1vne vyplnen\xfd d\xe1tum v\xfdstupu."
+	MyConsts_SMyZamNemozeMatObidve,	"Hodnotenie pracovn\xedka m\xf4\x9ee by\x9d uskuto\xe8nen\xe9 bu\xef dohodnutou v\xfd\x9akou mesa\xe8n\xe9ho platu alebo hodinovou sadzbou. Pou\x9ei\x9d s\xfa\xe8asne obidve nie je mo\x9en\xe9."
+	MyConsts_SMyZamKZPMusiBytVyplneny,	"K\xf3d zdravotnej pois\x9dovne mus\xed by\x9d vyplnen\xfd"
+	MyConsts_SMyZamSidNotFound,	"Stredisko s uveden\xfdm \xe8\xedslom nie je zadefinovan\xe9 v \xe8\xedseln\xedku stred\xedsk."
+	MyConsts_SMyZamDatumMusiZacinatVAktRoku,	"Zadan\xfd d\xe1tum mus\xed zodpoveda\x9d aktu\xe1lnemu v\xfdplatnemu roku, v ktorom je zad\xe1van\xfd alebo menen\xfd."
+	MyConsts_SMyDetMesOdExpected,	"Mesiac od mus\xed by\x9d vyplnen\xfd."
+	MyConsts_SMyDetMesDoExpected,	"Mesiac do mus\xed by\x9d vyplnen\xfd."
+	MyConsts_SMyBonusNesuhlasi,	"%s : mesiac %2d, ev.deti %7.2f, bonus vo vyplate %7.2f"
+	MyConsts_SMyNepDatZanikuPoistMusiBytDoKoncaRoka2012,	"D\xe1tum z\xe1niku poistenia: D\xe1tum mus\xed byt rovn\xfd alebo men\x9a\xed ako 31.12.2012"
+	MyConsts_SMyVypUzExistuje,	"V\xfdplata u\x9e bola uroben\xe1"
+	MyConsts_SMyVypVymazatVyplatu,	"Vymaza\x9d v\xfdplatu ?"
+	MyConsts_SMyVypBudeDefinitivneZrusena,	"V\xfdplata bude definit\xedvne zru\x9aen\xe1 ?"
+	MyConsts_SMyVypVymazanieBoloZastavene,	"Vymazanie v\xfdplaty bolo zastaven\xe9"
+	MyConsts_SMyVypOtazkaUplatnitZrazkovuDan,	"Zr\xe1\x9ekovou da\xf2ou je mo\x9en\xe9 zdani\x9d pr\xedjem zamestnanca do v\xfd\x9aky %s mesa\xe8ne v pr\xedpade zamestnanca, ktor\xfd zamestn\xe1vate\xbea nepo\x9eiadal o uplat\xf2ovanie nezdanite\xben\xfdch \xe8iastok a da\xf2ov\xe9ho bonusu. Naozaj si \x9eel\xe1te uplatni\x9d zr\xe1\x9ekov\xfa da\xf2 ?"
+	MyConsts_SMyVypOdpracDniTrebaVyplnit,	"Polo\x9eka po\xe8et odpracovan\xfdch dn\xed mus\xed by\x9d vyplnen\xe1."
+	MyConsts_SMyVypOdpracHodinyTrebaVyplnit,	"Polo\x9eka po\xe8et odpracovan\xfdch hod\xedn mus\xed by\x9d vyplnen\xe1."
+	MyConsts_SMyVypPoloykaDohodyNesmieBytVyplnena,	"Polo\x9eka Dohody o vyk.pr\xe1ce do 31.12.2012 nesmie by\x9d po 1.1.2013 vyplnen\xe1."
+	MyConsts_SMyVypTlacHPNotSelected,	"Nevybrali ste tla\xe8 \x9eiadnej \xe8asti hromadn\xe9ho pr\xedkazu. Tla\xe8 bola zru\x9aen\xe1."
+	MyConsts_SMyVypTypPremiiInvalid,	"Nespr\xe1vna hodnota. Povolen\xe9 hodnoty s\xfa 0(individ.v\xfd\x9aka),1(percent.v\xfd\x9aka a 2(hodinov\xe1 sadzba)."
+	MyConsts_SMyZamUzExistuje,	"Osobn\xe9 \xe8\xedslo %s je obsaden\xe9, mus\xedte zada\x9d \xe8\xedslo, ktor\xe9 e\x9ate nebolo pridelen\xe9"
+	MyConsts_SMyZamNotFound,	"Nie je vybrat\xfd zamestnanec"
+	MyConsts_SMyZamUkoncenyPomer2,	"Zamestnancovi nie je mo\x9en\xe9 zada\x9d v\xfdplatu. M\xe1 ukon\xe8en\xfd pracovn\xfd pomer."
+	MyConsts_SMyZamVymazatPracovnika,	"Vymaza\x9d zamestnanca ?"
+	MyConsts_SMyZamBudeDefinitivneZruseny,	"Zamestnanec bude definit\xedvne zru\x9aen\xfd ?"
+	MyConsts_SMyZamVymazanieBoloZastavene,	"Vymazanie zamestnanca bolo zastaven\xe9"
+	MyConsts_SMyRzpUzExistuje,	"Ro\xe8n\xe9 z\xfa\xe8tovanie dane u\x9e bolo uroben\xe9"
+	MyConsts_SMyRzpVymazatZuctovanie,	"Vymaza\x9d ro\xe8n\xe9 z\xfa\xe8tovanie dane ?"
+	MyConsts_SMyRzpBudeDefinitivneZrusene,	"Ro\xe8n\xe9 z\xfa\xe8tovanie dane bude definit\xedvne zru\x9aen\xe9 ?"
+	MyConsts_SMyRzpVymazanieBoloZastavene,	"Vymazanie ro\xe8n\xe9ho z\xfa\xe8tovania dane bolo zastaven\xe9"
+	MyConsts_SMyRzpNemenPred2002,	"Nie je dovolen\xe9 prid\xe1va\x9d ani modifikova\x9d ro\xe8n\xe9 z\xfa\xe8tovania pred rokom 2002"
+	MyConsts_SMyRzpNeexistuje,	"Najsk\xf4r je potrebn\xe9 vykona\x9d ro\xe8n\xe9 z\xfa\xe8tovanie dane"
+	MyConsts_SMyRzpNeexistuje2,	"Ro\xe8n\xe9 z\xfa\xe8tovanie dane nebolo n\xe1jden\xe9. Ak spracov\xe1vate rok %d, je potrebn\xe9 zmeni\x9d v\xfdplatn\xe9 obdobie. Ak spracov\xe1te rok %d je potrebn\xe9 najsk\xf4r urobi\x9d ro\xe8n\xe9 z\xfa\xe8tovanie dane."
+	MyConsts_SMyRzpChybaHranicaPreNezdCiastku,	"Nie je definovan\xe1 hranica z\xe1kl.dane pre nekr\xe1tenie nezd.\xe8iastky na da\xf2ovn\xedka. Skontrolujte \xe8\xedseln\xedk parametrov programu."
+	MyConsts_SMyZdrOznamenieNeexistuje,	"Nie je mo\x9en\xe9 vytla\xe8i\x9d ozn\xe1menie o preplatkoch. Bu\xef nebol vlo\x9een\xfd z\xe1znam do evidencie pre ro\xe8n\xe9 z\xfa\xe8tovanie zdravotn\xe9ho poistenia, alebo nebol vlo\x9een\xfd z\xe1znam do evidencie v\xfdsledkov ro\xe8n\xe9ho z\xfa\xe8tovania.\""
+	MyConsts_SMyZdrDokladNeexistuje,	"Nie je mo\x9en\xe9 vytla\xe8i\x9d doklad o preddavkoch. Bu\xef nebol vlo\x9een\xfd z\xe1znam do evidencie pre ro\xe8n\xe9 z\xfa\xe8tovanie zdravotn\xe9ho poistenia, alebo nie je nastaven\xfd sp\xf4sob v\xfdberu \x9eiadosti : \"zamestnanec po\x9eiadal zamestn\xe1vate\xbea o vystavenie potvrdenia\""
+	MyConsts_SMyZdrVypPodkladovPreDoklad,	"\x8eel\xe1te si vykona\x9d v\xfdpo\xe8et podkladov pre doklad ? Ak ste tento v\xfdpo\xe8et u\x9e urobili v minulosti, tak \xfadaje bud\xfa nahraden\xe9 nov\xfdm v\xfdpo\xe8tom. Pokra\xe8ova\x9d ?"
+	MyConsts_SMyZdrVypPodkladovPreDokladHotovo,	"Podklady pre doklad za jednotliv\xe9 mesiace boli zap\xedsan\xe9 do tabu\xbeky."
+	MyConsts_SMyZdrVypPodkladovChyba,	"Nie je mo\x9en\xe9 vykona\x9d tla\xe8. Najsk\xf4r je potrebn\xe9 vykona\x9d v\xfdpo\xe8et podkladov pre doklad v z\xe1lo\x9eke Doklad o preddavkoch za rok %s."
+	MyConsts_SMyZukVymazatZuctovanie,	"Vymaza\x9d v\xfdkon ?"
+	MyConsts_SMyZukBudeDefinitivneZrusene,	"V\xfdkon bude definit\xedvne zru\x9aen\xfd ?"
+	MyConsts_SMyZukVymazanieBoloZastavene,	"Vymazanie v\xfdkonu bolo zastaven\xe9"
+	MyConsts_SMyCisDeleteQuestion,	"Vymaza\x9d polo\x9eku ?"
+	MyConsts_SMyCisDeleteStopped,	"Vymazanie polo\x9eky bolo zastaven\xe9"
+	MyConsts_SMyCisDeleteNotAllowed,	"Vymazanie polo\x9eky nie je dovolen\xe9"
+	MyConsts_SMyCisKeyViolation,	"Key violation."
+	MyConsts_SMyCisDuplicitnyZaznam,	"Duplicitn\xfd z\xe1znam."
+	MyConsts_SMyCisInsertNotAllowed,	"Pridanie polo\x9eky nie je dovolen\xe9"
+	MyConsts_SMyCisInstituciaNotValid,	"Nespr\xe1vna hodnota."
+	MyConsts_SMyCisStrediskoJednaMusiZostat,	"Nie je mo\x9en\xe9 vymaza\x9d stredisko s \xe8\xedslom 1."
+	MyConsts_SMyHsvPocetZauctovanych,	"Prebehlo hromadn\xe9 spracovanie v\xfdplat. Po\xe8et spracovan\xfdch v\xfdplat %d."
+	MyConsts_SMyHsvOtazkaSpustit,	"Chcete spusti\x9d za\xfa\xe8tovanie v\xfdplat v mesiaci %s"
+	MyConsts_SMyHsvOtazkaUkoncit,	"Prajete si ukon\xe8i\x9d hromadn\xe9 spracovanie v\xfdplat ?"
+	MyConsts_SMyRepExecError,	"Nepodarilo sa inicializova\x9d tla\xe8ov\xfa zostavu"
+	MyConsts_SMyRepJedenPracovnik,	"Pre zvolen\xfd typ tla\xe8ovej zostavy mus\xed by\x9d vybran\xfd konkr\xe9tny pracovn\xedk"
+	MyConsts_SMyRepNotFoundVP2EMAIL,	"V aktu\xe1lnom mesiaci neexistuj\xfa v\xfdplatn\xe9 p\xe1sky pripraven\xe9 na odoslanie emailom, alebo yamestnanci nemaj\xfa spr\xe1vne vyplnen\xfa mailovu adresu."
+	MyConsts_SMyRzpZaciatok,	"Automatick\xe9 za\xfa\xe8tovanie preplatku/nedoplatku dane prebehne spr\xe1vne len vtedy, ak u\x9e m\xe1te hotov\xe9 v\xfdplaty za aktu\xe1lny mesiac, do ktor\xe9ho chcete toto za\xfa\xe8tovanie vykona\x9d. Pokra\xe8ova\x9d ?"
+	MyConsts_SMyRzzpZaciatok,	"Automatick\xe9 za\xfa\xe8tovanie preplatku/nedoplatku zdr.poistenia prebehne spr\xe1vne len vtedy, ak u\x9e m\xe1te hotov\xe9 v\xfdplaty za aktu\xe1lny mesiac, do ktor\xe9ho chcete toto za\xfa\xe8tovanie vykona\x9d. Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppDovodPreruseniaMusiBytVyplneny,	"D\xf4vod preru\x9aenia poistenia mus\xed by\x9d vyplnen\xfd"
+	MyConsts_SMyAppNoRowNotSelected,	"Nebol ozna\xe8en\xfd ani jeden riadok, aspo\xf2 jeden z\xe1znam je potrebn\xe9 ozna\xe8i\x9d."
+	MyConsts_SMyAppShowRowSelected,	"Bolo ozna\xe8en\xfdch %d riadkov na spracovanie. Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppBadRcLength,	"D\xe5\x9eka rodn\xe9ho \xe8\xedsla mus\xed by\x9d minim\xe1lne 9 a maxim\xe1lne 10 znakov."
+	MyConsts_SMyAppNotFoundVykazZP,	"V\xfdkaz pre zdravotn\xfa pois\x9dov\xf2u \xe8.%d je pr\xe1zdny."
+	MyConsts_SMyAppRocneZuctZpAzOdRoku2006,	"Ro\xe8n\xe9 z\xfa\xe8tovanie zdravotn\xe9ho poistn\xe9ho sa 1.kr\xe1t vykon\xe1va a\x9e vo v\xfdplatnom obdob\xed roku 2006 za rok 2005. Je potrebn\xe9 najsk\xf4r nastavi\x9d spr\xe1vne v\xfdplatn\xe9 obdobie."
+	MyConsts_SMyAppRocneZuctZlyRok,	"Nespr\xe1vny d\xe1tum %s - rok mus\xed by\x9d zhodn\xfd s rokom, za ktor\xfd sa rob\xed ro\xe8n\xe9 z\xfa\xe8tovanie."
+	MyConsts_SMyAppVD_PDF_Hotovo,	"Bolo vygenerovan\xfdch %d s\xfaborov %s v adres\xe1ri %s. S\xfabory je mo\x9en\xe9 prezera\x9d v prehliada\xe8i Acrobat Reader 6.0 CE alebo vy\x9a\x9aom. Prehliada\xe8 sa otvor\xed automaticky po dvojkliknut\xed na dan\xfd s\xfabor."
+	MyConsts_SMyAppZalozitNovuFirmu,	"Vybrali ste vo\xbebu pre pridanie novej firmy do mzdovej evidencie. Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppItemIsRequired,	"Polo\x9eka %s mus\xed by\x9d vyplnen\xe1"
+	MyConsts_SMyAppCompleted,	"Oper\xe1cia bola \xfaspe\x9ane dokon\xe8en\xe1"
+	MyConsts_SMyAppSpustitRocneHlasenieDU,	"\x8eel\xe1te si spusti\x9d vytvorenie ro\xe8n\xe9ho hl\xe1senia o vy\xfa\xe8tovan\xed dane pre da\xf2ov\xfd \xfarad za rok %d ?\n\rPokra\xe8ova\x9d ?"
+	MyConsts_SMyAppStatutarNeplatiGarancneOd_01jan2014,	"Od 1. janu\xe1ra 2014 \x9atatut\xe1ri s najmenej 50 % \xfa\xe8as\x9dou na majetku zamestn\xe1vatela nemaj\xfa n\xe1rok na garan\xe8n\xfa d\xe1vku.\n\rZmen\x9de hodnotu \xfa\xe8asti na garan\xe8nom poisten\xed na hodnotu 0"
+	MyConsts_SMyAppGenerovatAdresneStitky,	"\x8eel\xe1te si spusti\x9d generovanie adresn\xfdch \x9at\xedtkov do excelu ?"
+	MyConsts_SMyAppAdresneStitkyHotovo,	"Bol vygenerovan\xfd s\xfabor %s \n\rv adres\xe1ri %s.\n\rS\xfabor je mo\x9en\xe9 prezera\x9d v Exceli."
+	MyConsts_SMyAppKontrolaBonusuHotovo,	"Boli zisten\xe9 rozdiely medzi zapo\xe8\xedtan\xfdm bonusom a evidenciou det\xed.\n\rBol vygenerovan\xfd rozdielovy s\xfabor %s \n\rv adres\xe1ri %s.\n\rS\xfabor je mo\x9en\xe9 prezera\x9d v Exceli."
+	MyConsts_SMyAppKodNieJeVyplneny,	"Chyba. K\xf3d pois\x9dovne mus\xed by\x9d vyplnen\xfd."
+	MyConsts_SMyAppKodNieJeCislo,	"Chyba. K\xf3d pois\x9dovne mus\xed by\x9d \xe8\xedseln\xe1 hodnota."
+	MyConsts_SMyAppNedaSaNastavitRok,	"Od roku 2005 je ka\x9ed\xfd rok evidovan\xfd osobitne. Zmena roku znamen\xe1 zmenu agendy a vykon\xe1va sa cez menu Syst\xe9m/V\xfdber firmy. V tejto obrazovke m\xf4\x9eete rok nastavi\x9d na hodnotu 2004 alebo men\x9aiu"
+	MyConsts_SMyAppRokUzExistuje,	"Zalo\x9eenie datab\xe1z roku %s nie je mo\x9en\xe9, preto\x9ee datab\xe1zy u\x9e existuj\xfa."
+	MyConsts_SMyAppZalozenieRokuUspech,	"Zalo\x9eenie datab\xe1z roku %d bolo \xfaspe\x9an\xe9. Datab\xe1zy s\xfa ulo\x9een\xe9 v adres\xe1ri %s."
+	MyConsts_SMyAppZalozenieRokuNeuspech,	"Zalo\x9eenie datab\xe1z roku %d skon\xe8ilo ne\xfaspe\x9ane."
+	MyConsts_SMyAppOtazkaPridatRok,	"\x8eel\xe1te si zalo\x9ei\x9d datab\xe1zy pre rok %s ? Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppZauctovatPreplatkyDane,	"\x8eel\xe1te si do v\xfdplaty za %s za\xfa\xe8tova\x9d vypo\xe8\xedtan\xe9 preplatky a nedoplatky dane z ro\xe8n\xe9ho z\xfa\xe8tovania preddavkov dane za rok %d ? Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppZauctovatPreplatkyZP,	"\x8eel\xe1te si do v\xfdplaty za %s za\xfa\xe8tova\x9d vypo\xe8\xedtan\xe9 preplatky a nedoplatky zdrav.poistenia z ro\xe8n\xe9ho z\xfa\xe8tovania preddavkov zdrav.poistenia za rok %d ? Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppNeexistujeRZP,	"V roku %d sa nena\x9ali \x9eiadne vypo\xe8\xedtan\xe9 ro\xe8n\xe9 z\xfa\xe8tovania preddavkov. Zme\xf2te v\xfdplatn\xe9 obdobie na minul\xfd rok a vykonajte ro\xe8n\xe9 z\xfa\xe8tovanie preddavkov."
+	MyConsts_SMyAppChybaPriZauctovaniPreplatkovDane,	"Za\xfa\xe8tovanie preplatkov/nedoplatkov dane skon\xe8ilo s chybami. Viac inform\xe1ci\xed n\xe1jdete v protokole zo spracovania."
+	MyConsts_SMyAppChybaPriZauctovaniPreplatkovZP,	"Za\xfa\xe8tovanie preplatkov/nedoplatkov zdrav.poistenia skon\xe8ilo s chybami. Viac inform\xe1ci\xed n\xe1jdete v protokole zo spracovania."
+	MyConsts_SMyAppZdravFilesGenerated,	"Generovanie s\xfaborov %s v adres\xe1ri %s a v podadres\xe1ri pr\xedslu\x9anej zdravotnej pois\x9dovne bolo dokon\xe8en\xe9."
+	MyConsts_SMyAppZdravRzpFilesGenerated,	"S\xfabor %s s podkladmi pre ro\xe8n\xe9 z\xfa\xe8tovanie bol vytvoren\xfd.\r\nProgram nedok\xe1\x9ee generova\x9d obdobia poistenia OD DO pre zamestnancov, ktor\xfd mali v priebehu roka preru\x9aen\xe9 poistenie.\r\nTieto obdobia je potrebn\xe9 do s\xfaboru doplni\x9d manu\xe1lne v textovom editore.\r\nPo stla\xe8en\xed OK sa otvor\xed Explorer v pr\xedslu\x9anom adres\xe1ri, kde bol vygenerovan\xfd s\xfabor."
+	MyConsts_SMyAppZdravFilesNotGenerated,	"S\xfabory neboli vygenerovan\xe9, nako\xbeko nie s\xfa pripraven\xe9 \x9eiadne \xfadaje pre export d\xe1t.\r\nNajsk\xf4r je potrebn\xe9 pripravi\x9d \xfadaje v karte zamestnanca v z\xe1lo\x9eke Zdr.poist.-typ d\xe1vky 601."
+	MyConsts_SMyAppDovodPreruseniaNemaBytVyplneny,	"D\xf4vod preru\x9aenia poistenia je mo\x9en\xe9 zada\x9d len pre registra\xe8n\xfd list SP-preru\x9aenie"
+	MyConsts_SMyAppFileNotFound,	"Neexistuje s\xfabor %s."
+	MyConsts_SMyAppDanovePasmaNotFound,	"S\xfabor %s neobsahuje inform\xe1cie o da\xf2ov\xfdch p\xe1smach."
+	MyConsts_SMyAppNastavitDanovePasma,	"Chcete nastavi\x9d da\xf2ov\xe9 p\xe1sma pre rok %d zo s\xfaboru %s ?"
+	MyConsts_SMyAppNastavitParametreRoku,	"Chcete nastavi\x9d parametre pre rok %d zo s\xfaboru %s ?"
+	MyConsts_SMyAppNaozajVymazatHromPrikaz,	"Bude vymazan\xe1 hlavi\xe8ka hromadn\xe9ho pr\xedkazu a tie\x9e v\x9aetky riadky hromadn\xe9ho pr\xedkazu. Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppZakazRobitZmeny,	"Nie je mo\x9en\xe9 vykona\x9d zmenu v\xfdplaty star\x9aej ako je d\xe1tum poslednej uz\xe1vierky (%s)"
+	MyConsts_SMyAppZakazRobitZmenyMimoAktMesiaca,	"Nie je mo\x9en\xe9 vykona\x9d zmenu v\xfdplaty v inom ne\x9e aktu\xe1lnom obdob\xed. V pr\xedpade, \x9ee chcete \xfadaje zmeni\x9d, vykonajte zmenu v\xfdplatn\xe9ho obdobia."
+	MyConsts_SMyAppPreniestZmenyDoVyplat,	"Vykonali ste zmeny v nastaveniach. Chcete tieto zmeny prenies\x9d do v\x9aetk\xfdch v\xfdplat v mesiaci %s ?"
+	MyConsts_SMyAppNaozajPrepocitatVyplaty,	"Naozaj chcete prepo\xe8\xedta\x9d v\x9aetky v\xfdplaty za %s ?"
+	MyConsts_SMyAppNaozajRozdelitDan,	"Pred vykonan\xedm tejto oper\xe1cie je doporu\xe8en\xe9 vykona\x9d z\xe1lohu \xfadajov a po vykonan\xed akcie kontrolu \xfadajov vo v\xfdplat\xe1ch. Naozaj chcete prepo\xe8\xedta\x9d v\x9aetky v\xfdplaty (%s) a rozdeli\x9d da\xf2 pod\xbea pr\xedjmu na preddavkov\xfa a zr\xe1\x9ekov\xfa v mesiaci %s ?"
+	MyConsts_SMyAppZakazRobitHsv,	"Nie je mo\x9en\xe9 vykona\x9d hromadn\xe9 spracovanie v\xfdplat v mesiaci pred d\xe1tumom poslednej uz\xe1vierky (%s)"
+	MyConsts_SMyAppLenPoslednyMesiacStvrtroka,	"Uveden\xfd v\xfdkaz je mo\x9en\xe9 vytv\xe1ra\x9d iba v mesiacoch 3,6,9 a 12, teda posledn\xfd mesiac \x9atvr\x9droka."
+	MyConsts_SMyAppVytvoritNovyXml,	"S\xfabor %s u\x9e existuje. Touto oper\xe1ciou vznikne nov\xfd XML s\xfabor. Naozaj si \x9eel\xe1te vytvori\x9d nov\xfd XML s\xfabor ? "
+	MyConsts_SMyAppSpustitVypocetCDM,	"\x8eel\xe1te si vypo\xe8\xedta\x9d denn\xfd vymer.z\xe1klad pre v\xfdpo\xe8et n\xe1hrad PN pre rok %d ?\n\rPokra\xe8ova\x9d ?"
+	MyConsts_SMyAppVypocetCDM_Hotovo,	"V\xfdpo\xe8et skon\xe8il. Pros\xedm skontrolujte polo\x9eku \"Denn\xfd vymer.z\xe1kl.pre n\xe1hr.PN\" na kart\xe1ch zamestnancov v z\xe1lo\x9eke \"Pracovn\xe9 \xfadaje\"."
+	MyConsts_SMyAppTypRiadkuNieJeVybraty,	"Nevybrali ste typ riadku. Najsk\xf4r mus\xedte vybra\x9d typ riadku."
+	MyConsts_SMyAppOtazkaGenerujHP,	"\x8eel\xe1te si spusti\x9d generovanie hromadn\xe9ho pr\xedkazu pod\xbea v\xfdplat za %s ?"
+	MyConsts_SMyAppGenerujHPNotSelected,	"Nevybrali ste \x9eiadnu \xe8as\x9d hromadn\xe9ho pr\xedkazu. Generovanie bolo zru\x9aen\xe9."
+	MyConsts_SMyAppGenerujHPCompleted,	"Generovanie hromadn\xe9ho pr\xedkazu bolo dokon\xe8en\xe9. \r\n\r\n!!! Sumu pre odvod preddavkov alebo dane na da\xf2ov\xfd \xfarad je potrebn\xe9 skontrolova\x9d a pr\xedpadne aj manu\xe1lne upravi\x9d !!!\r\n     T\xe1to suma nezoh\xbead\xf2uje neuplatnen\xe9 preplatky z minul\xfdch mesiacov.\r\n\r\n!!! Doporu\xe8ujeme v\x9edy kontrolova\x9d s v\xfdkazmi !!!"
+	MyConsts_SMyAppHPCompletedXml,	"Generovanie s\xfaboru %s bolo dokon\xe8en\xe9."
+	MyConsts_SMyAppOtazkaBoloRocneZuctovanieVTomtoMesiaci,	"Pre be\x9en\xfd v\xfdkaz v mesiaci pou\x9eite ako odpove\xef prednastaven\xfa vo\xbebu \"Nie\"\n\r\n\rV mesiaci v ktorom ste vykonali a prip\xedsali ro\xe8n\xe9 z\xfa\xe8tovanie preddavkov dane, pou\x9eite vo\xbebu \"\xc1no\" a \xfadaje z ro\xe8n\xe9ho z\xfa\xe8tovania sa zahrn\xfa do tohto mesa\xe8n\xe9ho v\xfdkazu.\n\r\n\rBolo v tomto mesiaci vykonan\xe9 ro\xe8n\xe9 z\xfa\xe8tovanie preddavkov dane?"
+	MyConsts_SMyAppDuVykCompletedXml,	"Generovanie s\xfaboru %s bolo dokon\xe8en\xe9.\n\rXML s\xfabor je mo\x9en\xe9 nahra\x9d do softv\xe9ru eDANE, ktor\xfd poskytuje da\xf2ov\xfd \xfarad na svojej web str\xe1nke.\n\rPo stla\xe8en\xed OK sa otvor\xed Explorer v pr\xedslu\x9anom adres\xe1ri, kde bol vygenerovan\xfd s\xfabor."
+	MyConsts_SMyAppHPCompletedVub,	"Generovanie s\xfaboru %s bolo dokon\xe8en\xe9."
+	MyConsts_SMyAppHPBadCisloU,	"Chybn\xe9 \xe8\xedslo \xfa\xe8tu: %s !!!"
+	MyConsts_SMyAppHPNevyplnenyDatumSplatnosti,	"Najsk\xf4r je potrebn\xe9 vyplni\x9d d\xe1tum splatnosti hromadn\xe9ho pr\xedkazu."
+	MyConsts_SMyAppPriznakUctovatInvalid,	"Nespr\xe1vna hodnota. Povolen\xe9 hodnoty s\xfa 0(nie) a 1(\xe1no)."
+	MyConsts_SMyAppCreateFileFailed,	"Nepodarilo sa vytvori\x9d s\xfabor %s. Skontrolujte, \xe8i s\xfabor s uveden\xfdm menom nepou\x9e\xedva in\xe1 aplik\xe1cia."
+	MyConsts_SMyAppFileCreated,	"S\xfabor %s bol \xfaspe\x9ane vytvoren\xfd. Tento s\xfabor je mo\x9en\xe9 otvori\x9d v Exceli."
+	MyConsts_SMyAppRunExcel,	"\x8eel\xe1te si otvori\x9d vytvoren\xfd s\xfabor v Exceli ?"
+	MyConsts_SMyAppRunRTF,	"\x8eel\xe1te si otvori\x9d vytvoren\xfd s\xfabor %s ?"
+	MyConsts_SMyAppHpidIsNull,	"Najsk\xf4r mus\xedte vybra\x9d hromadn\xfd pr\xedkaz na \xfahradu."
+	MyConsts_SMyAppParameterNotFound,	"Nena\x9aiel sa parameter %s."
+	MyConsts_SMyAppOtazkaZrusitRegistraciu,	"Zru\x9aen\xedm registr\xe1cie programu sa program ukon\xe8\xed.\rPri novom spusten\xed program budete potrebova\x9d nov\xfd registra\xe8n\xfd k\xf3d.\rZru\x9ai\x9d registr\xe1ciu programu ?"
+	MyConsts_SMyAppOtazkaNaozajZrusit,	"Naozaj zru\x9ai\x9d %s ?"
+	MyConsts_SMyAppRegistraciaZrusena,	"Registr\xe1cia programu bola zru\x9aen\xe1. Program bude ukon\xe8en\xfd."
+	MyConsts_SMyAppRegistraciaNejdeZrusit,	"Registr\xe1cia nem\xf4\x9ee by\x9d zru\x9aen\xe1. Program nie je zaregistrovan\xfd."
+	MyConsts_SMyAppPridanieFirmyUspech,	"Pridanie novej firmy bolo \xfaspe\x9an\xe9. Poradov\xe9 \xe8\xedslo novej firmy je %d."
+	MyConsts_SMyApppridanieFirmyNeuspech,	"Chyba pri prid\xe1van\xed novej firmy."
+	MyConsts_SMyAppZrusenieFirmyPopis,	"Upozornenie! V\x9aetky \xfadaje firmy %s bud\xfa nen\xe1vratne vymazan\xe9 ! Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppZrusenieFirmyUspech,	"Zru\x9aenie firmy %s prebehlo \xfaspe\x9ane."
+	MyConsts_SMyAppZrusenieFirmyNeuspech,	"Chyba pri ru\x9aen\xed firmy %s."
+	MyConsts_SMyAppZrusenieFirmyOtvorena,	"Nie je mo\x9en\xe9 zru\x9ai\x9d otvoren\xfa firmu."
+	MyConsts_SMyAppZrusenieTlacovychDefinicii,	"Upozornenie! V\x9aetky defin\xedcie tla\xe8ov\xfdch zost\xe1v bud\xfa vymazan\xe9 ! Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppIbaMultiverzia,	"Prevedenie pr\xedslu\x9anej oper\xe1cie je mo\x9en\xe9 iba v multiverzii programu."
+	MyConsts_SMyAppHintPoistenie,	"Povolen\xe9 hodnoty: 0=nie, 1=\xe1no, 2=iba pracovn\xedk, 3=iba firma, 4=s\xfa\xe8et sadzieb, 5=\xe1no,ale firma len gar.fond"
+	MyConsts_SMyAppHintPoistenie2,	"Povolen\xe9 hodnoty: 0=nie, 1=\xe1no"
+	MyConsts_SMyAppHintVynimkaVZ,	"Povolen\xe9 hodnoty: 0=bez v\xfdnimky, ostatn\xe9 povolen\xe9 hodnoty s\xfa v \xe8\xedseln\xedku"
+	MyConsts_SMyAppChybaHlavickaHP,	"Najsk\xf4r je potrebn\xe9 zada\x9d hlavi\xe8ku hromadn\xe9ho pr\xedkazu."
+	MyConsts_SMyAppNaozajSpustitGfkZmenaNaDohodarov,	"Nepou\x9e\xedvajte t\xfato funkciu bez s\xfahlasu spolo\xe8nosti RAINITECH !!!. \x8eel\xe1te si spusti\x9d zmenu v\x9aetk\xfdch zamestnancov na dohod\xe1rov ?"
+	MyConsts_SMyAppGfkGarancneHotovo,	"Garan\xe8n\xe9 poistenie bolo nastaven\xe9 v zamestnancoch aj vo v\xfdplat\xe1ch v aktu\xe1lnom mesiaci."
+	MyConsts_SMyAppXenon98NaozajSpustit,	"\x8eel\xe1te si spusti\x9d export \xfadajov do s\xfaboru pre program Xenon 98 ?"
+	MyConsts_SMyAppXenon98Hotovo,	"Export je ukon\xe8en\xfd. Exportovan\xe9 \xfadaje boli ulo\x9een\xe9 do s\xfaboru %s."
+	MyConsts_SMyAppAccessImportHotovo,	"Import je ukon\xe8en\xfd. Po\xe8et importovan\xfdch v\xfdplat: %d."
+	MyConsts_SMyAppImportAnketarovNaozajSpustit,	"\x8eel\xe1te si spusti\x9d import \xfadajov o anket\xe1roch zo s\xfaboru %s ?"
+	MyConsts_SMyAppImportVyplatNaozajSpustit,	"\x8eel\xe1te si spusti\x9d import \xfadajov o v\xfdplat\xe1ch zo s\xfaboru %s ?"
+	MyConsts_SMyAppVymazVyplatAnketarov,	"Bud\xfa vymazan\xe9 v\x9aetky v\xfdplaty za mesiac %d/%d v stredisk\xe1ch \xe8\xedslo %s. Pokra\xe8ova\x9d ?"
+	MyConsts_SMyAppRunZalohovanie,	"Z\xe1lohovanie \xfadajov do adres\xe1ra %s.\n\rSpustenie z\xe1lohovania sp\xf4sob\xed zatvorenie datab\xe1z. Nesk\xf4r ich m\xf4\x9eete otvori\x9d cez menu \"V\xfdber firmy\".\n\rSpusti\x9d vytvorenie z\xe1lohy ?"
+	MyConsts_SMyAppRunZalohovanieVynutene,	"Od spustenia poslednej z\xe1lohy ubehlo viac ako 30 dn\xed.\n\rZ tohto d\xf4vodu je doporu\xe8en\xe9 spusti\x9d automatick\xe9 z\xe1lohovanie,\n\rktor\xe9 ochr\xe1ni Va\x9ae \xfadaje.\n\r\n\rZ\xe1lohovanie \xfadajov do adres\xe1ra %s.\n\rSpustenie z\xe1lohovania sp\xf4sob\xed zatvorenie datab\xe1z. Nesk\xf4r ich m\xf4\x9eete otvori\x9d cez menu \"V\xfdber firmy\".\n\rSpusti\x9d vytvorenie z\xe1lohy ?"
+	MyConsts_SMyAppObnovaVyber,	"V\xfdber s\xfaboru so z\xe1lo\x9enou k\xf3piou"
+	MyConsts_SMyAppXmlVyber,	"V\xfdber XML s\xfaboru pre soci\xe1lnu pois\x9dov\xf2u"
+	MyConsts_SMyAppRunObnova,	"POZOR! Obnovou \xfadajov zo z\xe1lo\x9enej k\xf3pie bud\xfa definit\xedvne vymazan\xe9 aktu\xe1lne \xfadaje firmy %s.\n\rSpustenie obnovy sp\xf4sob\xed zatvorenie datab\xe1z. Nesk\xf4r ich m\xf4\x9eete otvori\x9d cez menu \"V\xfdber firmy\".\n\rPokra\xe8ova\x9d ?"
+	MyConsts_SMyAppRunObnovaCommon,	"POZOR! Obnovou \xfadajov zo z\xe1lo\x9enej k\xf3pie bud\xfa definit\xedvne vymazan\xe9 s\xfa\xe8asn\xe9 nastavenia parametrov pre rok %d.\n\rSpustenie obnovy sp\xf4sob\xed zatvorenie datab\xe1z. Nesk\xf4r ich m\xf4\x9eete otvori\x9d cez menu \"V\xfdber firmy\".\n\rPokra\xe8ova\x9d ?"
+	MyConsts_SMyAppIbaJednoStredisko,	"V \xe8\xedseln\xedku stred\xedsk nie s\xfa zadefinovan\xe9 aspo\xf2 2 stredisk\xe1, preto nie je mo\x9en\xe9 zmeni\x9d stredisko."
+	MyConsts_SMyAppNesuhlasDatumovehoIntervalu,	"\"D\xe1tum do\" mus\xed by\x9d v\xe4\xe8\x9a\xed ako \"d\xe1tum od\"."
+	MyConsts_SMyAppVypNpCancel,	"Nie je dokon\xe8en\xe9 spracovanie nepravideln\xfdch pr\xedjmov. Ignorova\x9d vykonan\xe9 zmeny ?"
+	MyConsts_SMyAppVypNpZleObdobie,	"Mesiac do ktor\xe9ho sa rozpo\xe8\xedtava pr\xedjem nesmie by\x9d v\xe4\xe8\x9a\xed ako je mesiac aktu\xe1lneho v\xfdplatn\xe9ho obdobia."
+	MyConsts_SMyAppVypNpDuplicitnyZaznam,	"Duplicitn\xfd z\xe1znam. Pre dan\xfd mesiac u\x9e existuje z\xe1znam s nepravideln\xfdm pr\xedjmom."
+	MyConsts_SMyAppZrvAzPoZmeneVyp,	"Ak chcete prid\xe1va\x9d alebo opravova\x9d zr\xe1\x9eky zo mzdy, mus\xedte ma\x9d v\xfdplatu v re\x9eime opr\xe1v alebo prid\xe1vania."
+	MyConsts_SMyAppHsuAzPoZmeneVyp,	"Ak chcete prid\xe1va\x9d alebo opravova\x9d v\xfdkonov\xfa mzdu, mus\xedte ma\x9d v\xfdplatu v re\x9eime opr\xe1v alebo prid\xe1vania."
+	MyConsts_SMyAppCloseForm,	"Nie je dokon\xe8en\xe9 spracovanie zmien. Ignorova\x9d vykonan\xe9 zmeny ?"
+	MyConsts_SMyAppTerminate,	"Naozaj ukon\xe8i\x9d aplik\xe1ciu PAM98 ?"
+	MyConsts_SMyAppZlyhanieDB,	"Nepodarilo sa otvori\x9d s\xfabor %s"
+	MyConsts_SMyAppLimitExceeded,	"\xcfal\x9aiu v\xfdplatu v tomto mesiaci nie je mo\x9en\xe9 prida\x9d. T\xe1to verzia programu umo\x9e\xf2uje v jednom mesiaci vytvori\x9d maxim\xe1lne %s v\xfdplat"
+	MyConsts_SMyAppDataNotFound,	"Program nena\x9aiel ani jednu datab\xe1zu."
+	MyConsts_SMyAppUserWantInsert,	"Prida\x9d nov\xfd z\xe1znam ?"
+	MyConsts_SMyAppStopUserWantInsert,	"Prid\xe1vanie z\xe1znamu bolo zastaven\xe9."
+	MyConsts_SMyAppReportIsEmpty,	"Tla\xe8ov\xe1 zostava neobsahuje \x9eiadne \xfadaje, je pr\xe1zdna."
+	MyConsts_SMyAppReportShowFailed,	"Nastala chyba pri vytv\xe1ran\xed tla\xe8ovej zostavy. "
+	MyConsts_SMyAppOnlyHalfValueAllowed,	"Desatinn\xe1 \xe8as\x9d nesmie by\x9d in\xe1 ako 0.5 !!!"
+	MyConsts_SMyAppNaozajSpustitGfkGarancne,	"Nepou\x9e\xedvajte t\xfato funkciu bez s\xfahlasu spolo\xe8nosti RAINITECH !!!. \x8eel\xe1te si spusti\x9d nastavenie garan\xe8n\xe9ho poistenia pre v\x9aetk\xfdch zamestnancov ?"
+	MyConsts_SMyAppInvalidValue,	"Nespr\xe1vna hodnota."
+	MyConsts_SMyAppInvalid2Value,	"Nespr\xe1vna hodnota - polo\x9eka %s."
+	MyConsts_SMyAppOnlyForExtendedVersion,	" T\xe1to funkcia je povolen\xe1 len pre verziu PAM98 \"EXTENDED\"."
+	MyConsts_SMyAppNewPasswordNotSame,	"Nespr\xe1vne zadan\xe9 nov\xe9 heslo, nezhoduje sa s kontrolnou hodnotou."
+	MyConsts_SMyAppInvalidPassword,	"Nespr\xe1vny vstupn\xfd k\xf3d."
+	MyConsts_SMyAppPasswordSuccesfullyChanged,	"Vstupn\xe9 heslo bolo \xfaspe\x9ane zmenen\xe9."
+	MyConsts_SMyAppPasswordNotChanged,	"Heslo nebolo zmenen\xe9."
+	MyConsts_SMyAppInvalidLogin,	"Program bude ukon\xe8en\xfd, preto\x9ee nebol \xfaspe\x9ane prihl\xe1sen\xfd opr\xe1vnen\xfd pou\x9e\xedvate\xbe programu."
+	MyConsts_SMyAppInvalidLonginteger,	"Nespr\xe1vna \xe8\xedseln\xe1 hodnota."
+	MyConsts_SMyAppNotRegistered,	"Program bude ukon\xe8en\xfd, preto\x9ee nebol riadne zaregistrovan\xfd. Opr\xe1vnen\xfd pou\x9e\xedvate\xbe programu mus\xed zada\x9d registra\xe8n\xfd k\xf3d."
+	MyConsts_SMyAppInvalidRegKey,	"Chybn\xfd registra\xe8n\xfd k\xf3d"
+	MyConsts_SMyAppMocVelaPokusov,	"Prekro\xe8en\xfd maxim\xe1lny po\xe8et pokusov."
+	MyConsts_SMyAppCannotEdit,	"Neexistuje z\xe1znam pre vykonanie opravy"
+	MyConsts_SMyAppEditMode,	"Najsk\xf4r je potrebn\xe9 dokon\xe8i\x9d spracovanie zmien"
+	MyConsts_SMyAppZrvCancel,	"Nie je dokon\xe8en\xe9 spracovanie zr\xe1\x9eok zo mzdy. Ignorova\x9d vykonan\xe9 zmeny ?"
+	MyConsts_SMyAppHsuCancel,	"Nie je dokon\xe8en\xe9 spracovanie v\xfdkonovej mzdy. Ignorova\x9d vykonan\xe9 zmeny ?"
+	BdeConst_SInvalidAliasName,	"Invalid alias name %s"
+	BdeConst_SNoFieldAccess,	"Cannot access field '%s' in a filter"
+	BdeConst_SUntitled,	"Untitled Application"
+	BdeConst_SNoProvider,	"No provider available"
+	ComStrs_sTabAccessError,	"Tab control access error"
+	ComStrs_sPageIndexError,	"%d is an invalid PageIndex value.  PageIndex must be between 0 and %d"
+	ComStrs_sInvalidComCtl32,	"This control requires version 4.70 or greater of COMCTL32.DLL"
+	ComStrs_sDateTimeMax,	"Date exceeds maximum of %s"
+	ComStrs_sDateTimeMin,	"Date is less than minimum of %s"
+	ComStrs_sNeedAllowNone,	"You must be in ShowCheckbox mode to set to this date"
+	ComObj_SOleError,	"OLE error %.8x"
+	ComObj_SNoMethod,	"Method '%s' not supported by automation object"
+	ComObj_SVarNotObject,	"Variant does not reference an automation object"
+	UnicodeUtils_SOddSizeInvalid,	"Odd size not valid for WideString"
+	UnicodeUtils_STargetNil,	"Must have a target stream"
+	MyConsts_SMyAppInvalidObdobie4Demo,	"Moment\xe1lne pou\x9e\xedvate DEMO verziu programu PAM98. V\xfdplatn\xe9 obdobie pre sk\xfa\x9aobn\xfa prev\xe1dzku programu bolo ur\xe8en\xe9 na v\xfdplatn\xe9 mesiace janu\xe1r a\x9e september."
+	BdeConst_SHandleError,	"Error creating cursor handle"
+	BdeConst_SFieldUndefinedType,	"Field '%s' is of unknown type"
+	BdeConst_SFieldUnsupportedType,	"Field '%s' is of an unsupported type"
+	BdeConst_SCompositeIndexError,	"Cannot use array of Field values with Expression Indices"
+	BdeConst_SEmptySQLStatement,	"No SQL statement available"
+	BdeConst_SNoParameterValue,	"No value for parameter '%s'"
+	BdeConst_SParameterNotFound,	"Parameter '%s' not found"
+	BdeConst_SParamTooBig,	"Parameter '%s', cannot save data larger than %d bytes"
+	BdeConst_SLoginError,	"Cannot connect to database '%s'"
+	BdeConst_SInitError,	"An error occurred while attempting to initialize the Borland Database Engine (error $%.4x)"
+	BdeConst_SIDAPILangID,	"0009"
+	BdeConst_SBDEError,	"BDE error $%.4x"
+	BdeConst_SInvalidVersion,	"Unable to load bind parameters"
+	BdeConst_SIndexDoesNotExist,	"Index does not exist. Index: %s"
+	BdeConst_SNoTableName,	"Missing TableName property"
+	BdeConst_SNoCachedUpdates,	"Not in cached update mode"
+	DbConsts_SRefreshRecord,	"Refresh data"
+	DbConsts_SDeleteRecordQuestion,	"Delete record?"
+	DbConsts_SDeleteMultipleRecordsQuestion,	"Delete all selected records?"
+	DbConsts_SRecordNotFound,	"Record not found"
+	DbConsts_SDataSourceFixed,	"Operation not allowed in a DBCtrlGrid"
+	DbConsts_SNotReplicatable,	"Control cannot be used in a DBCtrlGrid"
+	DbConsts_SPropDefByLookup,	"Property already defined by lookup field"
+	DbConsts_STooManyColumns,	"Grid requested to display more than 256 columns"
+	BdeConst_SDuplicateDatabaseName,	"Duplicate database name '%s'"
+	BdeConst_SDuplicateSessionName,	"Duplicate session name '%s'"
+	BdeConst_SInvalidSessionName,	"Invalid session name %s"
+	BdeConst_SDatabaseNameMissing,	"Database name missing"
+	BdeConst_SSessionNameMissing,	"Session name missing"
+	BdeConst_SDatabaseOpen,	"Cannot perform this operation on an open database"
+	BdeConst_SDatabaseHandleSet,	"Database handle owned by a different session"
+	BdeConst_SSessionActive,	"Cannot perform this operation on an active session"
+	DbConsts_SExprBadNullTest,	"NULL je dovolen\xe9 iba spolu s '=' alebo '<>'"
+	DbConsts_SExprRangeError,	"Kon\x9atanta je mimo rozsahu"
+	DbConsts_SExprNotBoolean,	"Polo\x9eka '%s' nie je typu Boolean"
+	DbConsts_SExprIncorrect,	"Nekorektn\xfd v\xfdraz pre filter"
+	DbConsts_SExprNothing,	"ni\xe8"
+	DbConsts_STextFalse,	"False"
+	DbConsts_STextTrue,	"True"
+	DbConsts_SFirstRecord,	"First record"
+	DbConsts_SPriorRecord,	"Prior record"
+	DbConsts_SNextRecord,	"Next record"
+	DbConsts_SLastRecord,	"Last record"
+	DbConsts_SInsertRecord,	"Insert record"
+	DbConsts_SDeleteRecord,	"Delete record"
+	DbConsts_SEditRecord,	"Edit record"
+	DbConsts_SPostEdit,	"Post edit"
+	DbConsts_SCancelEdit,	"Cancel edit"
+	DbConsts_SDataSourceChange,	"D\xe1tov\xfd zdroj nem\xf4\x9ee by\x9d modifikovan\xfd"
+	DbConsts_SDataSetOpen,	"Nem\xf4\x9eem vykona\x9d t\xfato oper\xe1ciu na otvorenej d\xe1tovej mno\x9eine"
+	DbConsts_SNotEditing,	"D\xe1tov\xe1 mno\x9eina nie je v re\x9eime modifik\xe1cie ani prid\xe1vania"
+	DbConsts_SDataSetClosed,	"Nem\xf4\x9eem vykona\x9d t\xfato oper\xe1ciu na zatvorenej d\xe1tovej mno\x9eine"
+	DbConsts_SDataSetEmpty,	"Nem\xf4\x9eem vykona\x9d t\xfato oper\xe1ciu na pr\xe1zdnej d\xe1tovej mno\x9eine"
+	DbConsts_SDataSetReadOnly,	"Nem\xf4\x9eem modifikova\x9d d\xe1tov\xfa mno\x9einu ur\xe8en\xfa iba na \xe8\xedtanie"
+	DbConsts_SAutoSessionExclusive,	"Nem\xf4\x9eem dovoli\x9d AutoSessionName property s viac ako jednou session na formul\xe1ri alebo d\xe1tovom module"
+	DbConsts_SAutoSessionExists,	"Nem\xf4\x9eem prida\x9d session do formul\xe1ra alebo d\xe1tov\xe9ho modulu pokia\xbe session '%s' m\xe1 AutoSessionName povolen\xe9"
+	DbConsts_SAutoSessionActive,	"Nem\xf4\x9eem modifikova\x9d SessionName pok\xfdm AutoSessionName je povolen\xe9"
+	DbConsts_SExprTermination,	"V\xfdraz pre filter je nekorektne ukon\xe8en\xfd"
+	DbConsts_SExprNameError,	"Neukon\xe8en\xfd n\xe1zov polo\x9eky"
+	DbConsts_SExprStringError,	"Neukon\xe8en\xe1 znakov\xe1 kon\x9atanta"
+	DbConsts_SExprInvalidChar,	"Nespr\xe1vny znak vo v\xfdraze pre filter: '%s'"
+	DbConsts_SExprNoRParen,	"O\xe8ak\xe1val ')', na\x9aiel %s"
+	DbConsts_SExprExpected,	"O\xe8ak\xe1val v\xfdraz, na\x9aiel %s"
+	DbConsts_SExprBadField,	"Polo\x9eka '%s' nesmie by\x9d pou\x9eit\xe1 vo v\xfdraze pre filter"
+	DbConsts_SFieldTypeMismatch,	"Polo\x9eka '%s' nie je o\xe8ak\xe1van\xe9ho typu"
+	DbConsts_SInvalidVarByteArray,	"Nespr\xe1vny typ alebo ve\xbekos\x9d"
+	DbConsts_SFieldOutOfRange,	"Hodnota polo\x9eky '%s' je mimo dovolen\xe9ho rozsahu"
+	DbConsts_SBCDOverflow,	"(Prete\xe8enie)"
+	DbConsts_SFieldRequired,	"Polo\x9eka '%s' mus\xed by\x9d vyplnen\xe1"
+	DbConsts_SDataSetMissing,	"Polo\x9eka '%s' nem\xe1 d\xe1tov\xfd zdroj"
+	DbConsts_SInvalidCalcType,	"Polo\x9eka '%s' nem\xf4\x9ee by\x9d calculated alebo lookup"
+	DbConsts_SFieldReadOnly,	"Polo\x9eka '%s' nem\xf4\x9ee by\x9d zmenen\xe1"
+	DbConsts_SFieldIndexError,	"Index polo\x9eky je mimo rozsahu"
+	DbConsts_SNoFieldIndexes,	"\x8eiadny index nie je akt\xedvny"
+	DbConsts_SNotIndexField,	"Polo\x9eka '%s' nie je indexovan\xe1 a nem\xf4\x9ee by\x9d zmenen\xe1"
+	DbConsts_SIndexFieldMissing,	"Nem\xe1m pr\xedstup k indexu polo\x9eky '%s'"
+	DbConsts_SDuplicateIndexName,	"Duplicitn\xfd n\xe1zov indexu '%s'"
+	DbConsts_SNoIndexForFields,	"'%s' nem\xe1 index pre polo\x9eky '%s'"
+	DbConsts_SCircularDataLink,	"Kruhov\xe9 d\xe1tov\xe9 prepojenie nie je dovolen\xe9"
+	DbConsts_SLookupInfoError,	"Lookup inform\xe1cia pre polo\x9eku '%s' nie je kompletn\xe1"
+	Consts_SRegGetDataFailed,	"Failed to get data for '%s'"
+	Consts_SDuplicateMenus,	"Menu '%s' is already being used by another form"
+	Consts_SPictureLabel,	"Picture:"
+	Consts_SPictureDesc,	" (%dx%d)"
+	Consts_SPreviewLabel,	"Preview"
+	DbConsts_SInvalidFieldSize,	"Nespr\xe1vna ve\xbekos\x9d polo\x9eky"
+	DbConsts_SUnknownFieldType,	"Polo\x9eka '%s' je nezn\xe1meho typu"
+	DbConsts_SFieldNameMissing,	"Ch\xfdba n\xe1zov polo\x9eky"
+	DbConsts_SDuplicateFieldName,	"Duplicitn\xfd n\xe1zov polo\x9eky '%s'"
+	DbConsts_SFieldNotFound,	"%s: Polo\x9eka '%s' sa nena\x9ala"
+	DbConsts_SFieldAccessError,	"Nem\xe1m pr\xedstup k polo\x9eke '%s' ako k typu %s"
+	DbConsts_SFieldValueError,	"Nedovolen\xe1 hodnota pre polo\x9eku '%s'"
+	DbConsts_SFieldRangeError,	"%g nie je dovolen\xe1 hodnota pre polo\x9eku '%s'. Povolen\xfd rozsah je od %g do %g"
+	DbConsts_SInvalidIntegerValue,	"'%s' nie je pr\xedpustn\xe1 \xe8\xedseln\xe1 hodnota pre polo\x9eku '%s'"
+	DbConsts_SInvalidBoolValue,	"'%s' nie je pr\xedpustn\xe1 logick\xe1 hodnota pre polo\x9eku '%s'"
+	DbConsts_SInvalidFloatValue,	"'%s' nie je pr\xedpustn\xe1 re\xe1lna hodnota pre polo\x9eku '%s'"
+	Consts_srNone,	"(None)"
+	Consts_SOutOfRange,	"Value must be between %d and %d"
+	Consts_sAllFilter,	"All"
+	Consts_SInsertLineError,	"Unable to insert a line"
+	Consts_SCannotCreateDir,	"Unable to create directory"
+	Consts_SInvalidClipFmt,	"Invalid clipboard format"
+	Consts_SIconToClipboard,	"Clipboard does not support Icons"
+	Consts_SDefault,	"Default"
+	Consts_SInvalidMemoSize,	"Text exceeds memo capacity"
+	Consts_SInvalidPrinterOp,	"Operation not supported on selected printer"
+	Consts_SNoDefaultPrinter,	"There is no default printer currently selected"
+	Consts_SIniFileWriteError,	"Unable to write to %s"
+	Consts_SBitsIndexError,	"Bits index out of range"
+	Consts_SInvalidRegType,	"Invalid data type for '%s'"
+	Consts_SRegCreateFailed,	"Failed to create key %s"
+	Consts_SRegSetDataFailed,	"Failed to set data for '%s'"
+	Consts_SmkcEsc,	"Esc"
+	Consts_SmkcEnter,	"Enter"
+	Consts_SmkcSpace,	"Space"
+	Consts_SmkcPgUp,	"PgUp"
+	Consts_SmkcPgDn,	"PgDn"
+	Consts_SmkcEnd,	"End"
+	Consts_SmkcHome,	"Home"
+	Consts_SmkcLeft,	"Left"
+	Consts_SmkcUp,	"Up"
+	Consts_SmkcRight,	"Right"
+	Consts_SmkcDown,	"Down"
+	Consts_SmkcIns,	"Ins"
+	Consts_SmkcDel,	"Del"
+	Consts_SmkcShift,	"Shift+"
+	Consts_SmkcCtrl,	"Ctrl+"
+	Consts_SmkcAlt,	"Alt+"
+	Consts_SMsgDlgError,	"Error"
+	Consts_SMsgDlgInformation,	"Information"
+	Consts_SMsgDlgConfirm,	"Confirm"
+	Consts_SMsgDlgYes,	"&Yes"
+	Consts_SMsgDlgNo,	"&No"
+	Consts_SMsgDlgOK,	"OK"
+	Consts_SMsgDlgCancel,	"Cancel"
+	Consts_SMsgDlgHelp,	"&Help"
+	Consts_SMsgDlgAbort,	"&Abort"
+	Consts_SMsgDlgRetry,	"&Retry"
+	Consts_SMsgDlgIgnore,	"&Ignore"
+	Consts_SMsgDlgAll,	"&All"
+	Consts_SMsgDlgNoToAll,	"N&o to All"
+	Consts_SMsgDlgYesToAll,	"Y&es to All"
+	Consts_SmkcBkSp,	"BkSp"
+	Consts_SmkcTab,	"Tab"
+	Consts_SCannotDragForm,	"Cannot drag a form"
+	Consts_SPutObjectError,	"PutObject to undefined item"
+	Consts_SVMetafiles,	"Metafiles"
+	Consts_SVEnhMetafiles,	"Enhanced Metafiles"
+	Consts_SVIcons,	"Icons"
+	Consts_SVBitmaps,	"Bitmaps"
+	Consts_SGridTooLarge,	"Grid too large for operation"
+	Consts_STooManyDeleted,	"Too many rows or columns deleted"
+	Consts_SIndexOutOfRange,	"Grid index out of range"
+	Consts_SFixedColTooBig,	"Fixed column count must be less than column count"
+	Consts_SFixedRowTooBig,	"Fixed row count must be less than row count"
+	Consts_SInvalidStringGridOp,	"Cannot insert or delete rows from grid"
+	Consts_SInvalidProperty,	"Invalid property value"
+	Consts_SMaskErr,	"Invalid input value"
+	Consts_SMaskEditErr,	"Invalid input value.  Use escape key to abandon changes"
+	Consts_SMsgDlgWarning,	"Warning"
+	Consts_SPrinterIndexError,	"Printer index out of range"
+	Consts_SInvalidPrinter,	"Printer selected is not valid"
+	Consts_SDeviceOnPort,	"%s on %s"
+	Consts_SGroupIndexTooLow,	"GroupIndex cannot be less than a previous menu item's GroupIndex"
+	Consts_SNoMDIForm,	"Cannot create form. No MDI forms are currently active"
+	Consts_SControlParentSetToSelf,	"A control cannot have itself as its parent"
+	Consts_SOKButton,	"OK"
+	Consts_SCancelButton,	"Cancel"
+	Consts_SYesButton,	"&Yes"
+	Consts_SNoButton,	"&No"
+	Consts_SHelpButton,	"&Help"
+	Consts_SCloseButton,	"&Close"
+	Consts_SIgnoreButton,	"&Ignore"
+	Consts_SRetryButton,	"&Retry"
+	Consts_SAbortButton,	"Abort"
+	Consts_SAllButton,	"&All"
+	Consts_SImageReadFail,	"Failed to read ImageList data from stream"
+	Consts_SImageWriteFail,	"Failed to write ImageList data to stream"
+	Consts_SWindowDCError,	"Error creating window device context"
+	Consts_SWindowClass,	"Error creating window class"
+	Consts_SCannotFocus,	"Cannot focus a disabled or invisible window"
+	Consts_SParentRequired,	"Control '%s' has no parent window"
+	Consts_SMDIChildNotVisible,	"Cannot hide an MDI Child Form"
+	Consts_SVisibleChanged,	"Cannot change Visible in OnShow or OnHide"
+	Consts_SCannotShowModal,	"Cannot make a visible window modal"
+	Consts_SPropertyOutOfRange,	"%s property out of range"
+	Consts_SMenuIndexError,	"Menu index out of range"
+	Consts_SMenuReinserted,	"Menu inserted twice"
+	Consts_SMenuNotFound,	"Sub-menu is not in menu"
+	Consts_SNoTimers,	"Not enough timers available"
+	Consts_SNotPrinting,	"Printer is not currently printing"
+	Consts_SPrinting,	"Printing in progress"
+	Consts_SReadOnlyProperty,	"Property is read-only"
+	Consts_SPropertyException,	"Error reading %s.%s: %s"
+	Consts_SAncestorNotFound,	"Ancestor for '%s' not found"
+	Consts_SInvalidBitmap,	"Bitmap image is not valid"
+	Consts_SInvalidIcon,	"Icon image is not valid"
+	Consts_SInvalidMetafile,	"Metafile is not valid"
+	Consts_SChangeIconSize,	"Cannot change the size of an icon"
+	Consts_SOleGraphic,	"Invalid operation on TOleGraphic"
+	Consts_SUnknownExtension,	"Unknown picture file extension (.%s)"
+	Consts_SUnknownClipboardFormat,	"Unsupported clipboard format"
+	Consts_SOutOfResources,	"Out of system resources"
+	Consts_SNoCanvasHandle,	"Canvas does not allow drawing"
+	Consts_SInvalidImageSize,	"Invalid image size"
+	Consts_SInvalidImageList,	"Invalid ImageList"
+	Consts_SReplaceImage,	"Unable to Replace Image"
+	Consts_SImageIndexError,	"Invalid ImageList Index"
+	Consts_SMemoryStreamError,	"Out of memory while expanding memory stream"
+	Consts_SCantWriteResourceStreamError,	"Can't write to a read-only resource stream"
+	Consts_SClassNotFound,	"Class %s not found"
+	Consts_SInvalidImage,	"Invalid stream format"
+	Consts_SResNotFound,	"Resource %s not found"
+	Consts_SListIndexError,	"List index out of bounds (%d)"
+	Consts_SListCapacityError,	"List capacity out of bounds (%d)"
+	Consts_SListCountError,	"List count out of bounds (%d)"
+	Consts_SSortedListError,	"Operation not allowed on sorted string list"
+	Consts_SDuplicateString,	"String list does not allow duplicates"
+	Consts_SDuplicateName,	"A component named %s already exists"
+	Consts_SInvalidName,	"''%s'' is not a valid component name"
+	Consts_SDuplicateClass,	"A class named %s already exists"
+	Consts_SInvalidPropertyValue,	"Invalid property value"
+	Consts_SInvalidPropertyPath,	"Invalid property path"
+	Consts_SUnknownProperty,	"Property does not exist"
+	SysUtils_SShortDayNameWed,	"Wed"
+	SysUtils_SShortDayNameThu,	"Thu"
+	SysUtils_SShortDayNameFri,	"Fri"
+	SysUtils_SShortDayNameSat,	"Sat"
+	SysUtils_SLongDayNameSun,	"Sunday"
+	SysUtils_SLongDayNameMon,	"Monday"
+	SysUtils_SLongDayNameTue,	"Tuesday"
+	SysUtils_SLongDayNameWed,	"Wednesday"
+	SysUtils_SLongDayNameThu,	"Thursday"
+	SysUtils_SLongDayNameFri,	"Friday"
+	SysUtils_SLongDayNameSat,	"Saturday"
+	Consts_SAssignError,	"Cannot assign a %s to a %s"
+	Consts_SFCreateError,	"Cannot create file %s"
+	Consts_SFOpenError,	"Cannot open file %s"
+	Consts_SReadError,	"Stream read error"
+	Consts_SWriteError,	"Stream write error"
+	SysUtils_SShortMonthNameDec,	"Dec"
+	SysUtils_SLongMonthNameJan,	"January"
+	SysUtils_SLongMonthNameFeb,	"February"
+	SysUtils_SLongMonthNameMar,	"March"
+	SysUtils_SLongMonthNameApr,	"April"
+	SysUtils_SLongMonthNameMay,	"May"
+	SysUtils_SLongMonthNameJun,	"June"
+	SysUtils_SLongMonthNameJul,	"July"
+	SysUtils_SLongMonthNameAug,	"August"
+	SysUtils_SLongMonthNameSep,	"September"
+	SysUtils_SLongMonthNameOct,	"October"
+	SysUtils_SLongMonthNameNov,	"November"
+	SysUtils_SLongMonthNameDec,	"December"
+	SysUtils_SShortDayNameSun,	"Sun"
+	SysUtils_SShortDayNameMon,	"Mon"
+	SysUtils_SShortDayNameTue,	"Tue"
+	SysUtils_SAbstractError,	"Abstract Error"
+	SysUtils_SModuleAccessViolation,	"Access violation at address %p in module '%s'. %s of address %p"
+	SysUtils_SWin32Error,	"Win32 Error.  Code: %d.\n%s"
+	SysUtils_SUnkWin32Error,	"A Win32 API function failed"
+	SysUtils_SNL,	"Application is not licensed to use this feature"
+	SysUtils_SShortMonthNameJan,	"Jan"
+	SysUtils_SShortMonthNameFeb,	"Feb"
+	SysUtils_SShortMonthNameMar,	"Mar"
+	SysUtils_SShortMonthNameApr,	"Apr"
+	SysUtils_SShortMonthNameMay,	"May"
+	SysUtils_SShortMonthNameJun,	"Jun"
+	SysUtils_SShortMonthNameJul,	"Jul"
+	SysUtils_SShortMonthNameAug,	"Aug"
+	SysUtils_SShortMonthNameSep,	"Sep"
+	SysUtils_SShortMonthNameOct,	"Oct"
+	SysUtils_SShortMonthNameNov,	"Nov"
+	SysUtils_SInvalidFormat,	"Format '%s' invalid or incompatible with argument"
+	SysUtils_SArgumentMissing,	"No argument for format '%s'"
+	SysUtils_SInvalidVarCast,	"Invalid variant type conversion"
+	SysUtils_SInvalidVarOp,	"Invalid variant operation"
+	SysUtils_SDispatchError,	"Variant method calls not supported"
+	SysUtils_SReadAccess,	"Read"
+	SysUtils_SWriteAccess,	"Write"
+	SysUtils_SResultTooLong,	"Format result longer than 4096 characters"
+	SysUtils_SFormatTooLong,	"Format string too long"
+	SysUtils_SVarArrayCreate,	"Error creating variant array"
+	SysUtils_SVarNotArray,	"Variant is not an array"
+	SysUtils_SVarArrayBounds,	"Variant array index out of bounds"
+	SysUtils_SExternalException,	"External exception %x"
+	SysUtils_SAssertionFailed,	"Assertion failed"
+	SysUtils_SIntfCastError,	"Interface not supported"
+	SysUtils_SAssertError,	"%s (%s, line %d)"
+	SysUtils_SDivByZero,	"Division by zero"
+	SysUtils_SRangeError,	"Range check error"
+	SysUtils_SIntOverflow,	"Integer overflow"
+	SysUtils_SInvalidOp,	"Invalid floating point operation"
+	SysUtils_SZeroDivide,	"Floating point division by zero"
+	SysUtils_SOverflow,	"Floating point overflow"
+	SysUtils_SUnderflow,	"Floating point underflow"
+	SysUtils_SInvalidPointer,	"Invalid pointer operation"
+	SysUtils_SInvalidCast,	"Invalid class typecast"
+	SysUtils_SAccessViolation,	"Access violation at address %p. %s of address %p"
+	SysUtils_SStackOverflow,	"Stack overflow"
+	SysUtils_SControlC,	"Control-C hit"
+	SysUtils_SPrivilege,	"Privileged instruction"
+	SysUtils_SOperationAborted,	"Operation aborted"
+	SysUtils_SException,	"Exception %s in module %s at %p.\n%s%s"
+	SysUtils_SExceptTitle,	"Application Error"
+	SysUtils_SInvalidInteger,	"'%s' is not a valid integer value"
+	SysUtils_SInvalidFloat,	"'%s' is not a valid floating point value"
+	SysUtils_SInvalidDate,	"'%s' is not a valid date"
+	SysUtils_SInvalidTime,	"'%s' is not a valid time"
+	SysUtils_SInvalidDateTime,	"'%s' is not a valid date and time"
+	SysUtils_STimeEncodeError,	"Invalid argument to time encode"
+	SysUtils_SDateEncodeError,	"Invalid argument to date encode"
+	SysUtils_SOutOfMemory,	"Out of memory"
+	SysUtils_SInOutError,	"I/O error %d"
+	SysUtils_SFileNotFound,	"File not found"
+	SysUtils_SInvalidFilename,	"Invalid filename"
+	SysUtils_STooManyOpenFiles,	"Too many open files"
+	SysUtils_SAccessDenied,	"File access denied"
+	SysUtils_SEndOfFile,	"Read beyond end of file"
+	SysUtils_SDiskFull,	"Disk full"
+	SysUtils_SInvalidInput,	"Invalid numeric input"
+END
+

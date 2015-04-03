@@ -1,0 +1,329 @@
+UNICODE UTILITY LIBRARY REVISION HISTORY
+
+2003-07-29
+Several conversion functions optimized. Thanks to Micha Nelissen for the modifications.
+Iso8859_2ToUTF16Char and UTF16ToIso8859_2Char functions: bug fixed.  Thanks to Lucjan £yczak for notification. 
+Support for the following character encoding schemata was removed (the implementation contained bugs which could not be fixed easily): cp932, cp936, cp949, cp950.
+
+2002-05-17
+TStrToUTF16ConvFunc added.
+TUTF16ToStrConvFunc added.
+GetStrToUTF16ConvFunc added.
+GetUTF16ToStrConvFunc added.
+
+
+2002-09-31
+UTF8ToUTF16BEStr function: Bug fixed.  Thanks to Ernst van der Pols for notification.
+Release of "Unicode Converter Library v.3.0.1".
+
+2002-08-19
+Release of "Unicode Converter Library v.3.0.0".
+
+2002-08-16
+TdomEncodingType: etJIS_X0201 added.
+SINGLE_BYTE_ENCODINGS: etJIS_X0201 added.
+GetCharToUTF16ConvFunc internally modified.
+GetUTF16ToCharConvFunc internally modified.
+EncodingToStr internally modified.
+StrToEncoding internally modified.
+JIS_X0201ToUTF16Char added.
+JIS_X0201ToUTF16Str added.
+UTF16ToJIS_X0201Char added.
+UTF16ToJIS_X0201Str added.
+UTF8ToUTF16BEStr modified to skip a Byte Order Mark.
+
+2002-08-09
+EncodingToStr function added.
+
+2002-08-08
+TdomEncodingType: Several new constants added. The following constants have been renamed to the preferred MIME names of the charsets: etUTF8 to etUTF_8, etUTF16BE to etUTF_16BE, etUTF16LE to etUTF_16LE, etLatin1 to etIso_8859_1, etLatin2 to etIso_8859_2, etLatin3 to etIso_8859_3, etLatin4 to etIso_8859_4, etCyrillic to etIso_8859_5, etArabic to etIso_8859_6, etGreek to etIso_8859_7, etHebrew to etIso_8859_8, etLatin5 to etIso_8859_9, etLatin6 to etIso_8859_10, etLatin7 to etIso_8859_13, etLatin8 to etIso_8859_14, etLatin9 to etIso_8859_15, etKOI8R to etKOI8_R, etWindows1250 to etWindows_1250, etWindows1251 to etWindows_1251, etWindows1252 to etWindows_1252. -- All occurences of this constants changed accordingly.
+GetACPEncodingType function added (Delphi only).
+GetACPEncodingName function added (Delphi only).
+
+2002-08-06
+cp869ToUTF16Char added.
+cp869ToUTF16Str added.
+UTF16ToCp869Char added.
+UTF16ToCp869Str added.
+
+2002-08-05
+TCharToUTF16ConvFunc class added.
+TUTF16ToCharConvFunc class added.
+TdomEncodingTypes added.
+SINGLE_BYTE_ENCODINGS constant added.
+All UTF16To...Char functions: parameter P: wideChar changed to I: longint.
+All ...ToUTF16Char functions: parameter P: Char changed to W: word.
+SingleByteEncodingToUTF16Char: parameter P: Char changed to W: word.
+GetCharToUTF16ConvFunc function added.
+GetUTF16ToCharConvFunc function added.
+
+2002-08-03
+UTF16BEToUTF8Str: expandLF parameter removed.
+TUTF16BEToUTF8Stream: expandLF property removed.
+TUTF16BEToUTF8Stream.ConvertWriteBuffer modified: All US-ASCII characters are now recognized (not only those which are allowed in XML).
+UTF16To7BitASCIIChar renamed to UTF16ToUS_ASCIIChar 
+UTF16To7BitASCIIStr renamed to UTF16ToUS_ASCIIStr
+
+2002-08-01
+cp10006_MacGreekToUTF16Char added.
+cp10007_MacCyrillicToUTF16Char added.
+cp10029_MacLatin2ToUTF16Char added.
+cp10079_MacIcelandicToUTF16Char added.
+cp10081_MacTurkishToUTF16Char added.
+cp037ToUTF16Char added.
+cp424ToUTF16Char added.
+cp500ToUTF16Char added.
+cp874ToUTF16Char added.
+cp875ToUTF16Char added.
+cp932ToUTF16Char added.
+cp936ToUTF16Char added.
+cp949ToUTF16Char added.
+cp950ToUTF16Char added.
+cp1006ToUTF16Char added.
+cp1026ToUTF16Char added.
+cp1252ToUTF16Char internally modified.
+cp1253ToUTF16Char added.
+cp1254ToUTF16Char added.
+cp1255ToUTF16Char added.
+cp1256ToUTF16Char added.
+cp1257ToUTF16Char added.
+cp1258ToUTF16Char added.
+nextStepToUTF16Char added.
+cp437ToUTF16Char added.
+cp437_DOSLatinUSToUTF16Char added.
+cp737_DOSGreekToUTF16Char added.
+cp775_DOSBaltRimToUTF16Char added.
+cp850ToUTF16Char added.
+cp850_DOSLatin1ToUTF16Char added.
+cp852ToUTF16Char added.
+cp852_DOSLatin2ToUTF16Char added.
+cp855ToUTF16Char added.
+cp855_DOSCyrillicToUTF16Char added.
+cp856_Hebrew_PCToUTF16Char added.
+cp857ToUTF16Char added.
+cp857_DOSTurkishToUTF16Char added.
+cp860ToUTF16Char added.
+cp860_DOSPortugueseToUTF16Char added.
+cp861ToUTF16Char added.
+cp861_DOSIcelandicToUTF16Char added.
+cp862ToUTF16Char added.
+cp862_DOSHebrewToUTF16Char added.
+cp863ToUTF16Char added.
+cp863_DOSCanadaFToUTF16Char added.
+cp864ToUTF16Char added.
+cp864_DOSArabicToUTF16Char added.
+cp865ToUTF16Char added.
+cp865_DOSNordicToUTF16Char added.
+cp866ToUTF16Char added.
+cp866_DOSCyrillicRussianToUTF16Char added.
+cp869_DOSGreek2ToUTF16Char added.
+
+cp10006_MacGreekToUTF16Str added.
+cp10007_MacCyrillicToUTF16Str added.
+cp10029_MacLatin2ToUTF16Str added.
+cp10079_MacIcelandicToUTF16Str added.
+cp10081_MacTurkishToUTF16Str added.
+cp037ToUTF16Str added.
+cp424ToUTF16Str added.
+cp500ToUTF16Str added.
+cp874ToUTF16Str added.
+cp875ToUTF16Str added.
+cp932ToUTF16Str added.
+cp936ToUTF16Str added.
+cp949ToUTF16Str added.
+cp950ToUTF16Str added.
+cp1006ToUTF16Str added.
+cp1026ToUTF16Str added.
+cp1253ToUTF16Str added.
+cp1254ToUTF16Str added.
+cp1255ToUTF16Str added.
+cp1256ToUTF16Str added.
+cp1257ToUTF16Str added.
+cp1258ToUTF16Str added.
+nextStepToUTF16Str added.
+cp437ToUTF16Str added.
+cp437_DOSLatinUSToUTF16Str added.
+cp737_DOSGreekToUTF16Str added.
+cp775_DOSBaltRimToUTF16Str added.
+cp850ToUTF16Str added.
+cp850_DOSLatin1ToUTF16Str added.
+cp852ToUTF16Str added.
+cp852_DOSLatin2ToUTF16Str added.
+cp855ToUTF16Str added.
+cp855_DOSCyrillicToUTF16Str added.
+cp856_Hebrew_PCToUTF16Str added.
+cp857ToUTF16Str added.
+cp857_DOSTurkishToUTF16Str added.
+cp860ToUTF16Str added.
+cp860_DOSPortugueseToUTF16Str added.
+cp861ToUTF16Str added.
+cp861_DOSIcelandicToUTF16Str added.
+cp862ToUTF16Str added.
+cp862_DOSHebrewToUTF16Str added.
+cp863ToUTF16Str added.
+cp863_DOSCanadaFToUTF16Str added.
+cp864ToUTF16Str added.
+cp864_DOSArabicToUTF16Str added.
+cp865ToUTF16Str added.
+cp865_DOSNordicToUTF16Str added.
+cp866ToUTF16Str added.
+cp866_DOSCyrillicRussianToUTF16Str added.
+cp869_DOSGreek2ToUTF16Str added.
+
+UTF16ToCp10006_MacGreekChar added.
+UTF16ToCp10007_MacCyrillicChar added.
+UTF16ToCp10029_MacLatin2Char added.
+UTF16ToCp10079_MacIcelandicChar added.
+UTF16ToCp10081_MacTurkishChar added.
+UTF16ToCp037Char added.
+UTF16ToCp424Char added.
+UTF16ToCp500Char added.
+UTF16ToCp874Char added.
+UTF16ToCp875Char added.
+UTF16ToCp932Char added.
+UTF16ToCp936Char added.
+UTF16ToCp949Char added.
+UTF16ToCp950Char added.
+UTF16ToCp1006Char added.
+UTF16ToCp1026Char added.
+UTF16ToCp1253Char added.
+UTF16ToCp1254Char added.
+UTF16ToCp1255Char added.
+UTF16ToCp1256Char added.
+UTF16ToCp1257Char added.
+UTF16ToCp1258Char added.
+UTF16ToNextStepChar added.
+UTF16ToCp437Char added.
+UTF16ToCp437_DOSLatinUSChar added.
+UTF16ToCp737_DOSGreekChar added.
+UTF16ToCp775_DOSBaltRimChar added.
+UTF16ToCp850Char added.
+UTF16ToCp850_DOSLatin1Char added.
+UTF16ToCp852Char added.
+UTF16ToCp852_DOSLatin2Char added.
+UTF16ToCp855Char added.
+UTF16ToCp855_DOSCyrillicChar added.
+UTF16ToCp856_Hebrew_PCChar added.
+UTF16ToCp857Char added.
+UTF16ToCp857_DOSTurkishChar added.
+UTF16ToCp860Char added.
+UTF16ToCp860_DOSPortugueseChar added.
+UTF16ToCp861Char added.
+UTF16ToCp861_DOSIcelandicChar added.
+UTF16ToCp862Char added.
+UTF16ToCp862_DOSHebrewChar added.
+UTF16ToCp863Char added.
+UTF16ToCp863_DOSCanadaFChar added.
+UTF16ToCp864Char added.
+UTF16ToCp864_DOSArabicChar added.
+UTF16ToCp865Char added.
+UTF16ToCp865_DOSNordicChar added.
+UTF16ToCp866Char added.
+UTF16ToCp866_DOSCyrillicRussianChar added.
+UTF16ToCp869_DOSGreek2Char added.
+
+UTF16ToCp10006_MacGreekStr added.
+UTF16ToCp10007_MacCyrillicStr added.
+UTF16ToCp10029_MacLatin2Str added.
+UTF16ToCp10079_MacIcelandicStr added.
+UTF16ToCp10081_MacTurkishStr added.
+UTF16ToCp037Str added.
+UTF16ToCp424Str added.
+UTF16ToCp500Str added.
+UTF16ToCp874Str added.
+UTF16ToCp875Str added.
+UTF16ToCp932Str added.
+UTF16ToCp936Str added.
+UTF16ToCp949Str added.
+UTF16ToCp950Str added.
+UTF16ToCp1006Str added.
+UTF16ToCp1026Str added.
+UTF16ToCp1253Str added.
+UTF16ToCp1254Str added.
+UTF16ToCp1255Str added.
+UTF16ToCp1256Str added.
+UTF16ToCp1257Str added.
+UTF16ToCp1258Str added.
+UTF16ToNextStepStr added.
+UTF16ToCp437Str added.
+UTF16ToCp437_DOSLatinUSStr added.
+UTF16ToCp737_DOSGreekStr added.
+UTF16ToCp775_DOSBaltRimStr added.
+UTF16ToCp850Str added.
+UTF16ToCp850_DOSLatin1Str added.
+UTF16ToCp852Str added.
+UTF16ToCp852_DOSLatin2Str added.
+UTF16ToCp855Str added.
+UTF16ToCp855_DOSCyrillicStr added.
+UTF16ToCp856_Hebrew_PCStr added.
+UTF16ToCp857Str added.
+UTF16ToCp857_DOSTurkishStr added.
+UTF16ToCp860Str added.
+UTF16ToCp860_DOSPortugueseStr added.
+UTF16ToCp861Str added.
+UTF16ToCp861_DOSIcelandicStr added.
+UTF16ToCp862Str added.
+UTF16ToCp862_DOSHebrewStr added.
+UTF16ToCp863Str added.
+UTF16ToCp863_DOSCanadaFStr added.
+UTF16ToCp864Str added.
+UTF16ToCp864_DOSArabicStr added.
+UTF16ToCp865Str added.
+UTF16ToCp865_DOSNordicStr added.
+UTF16ToCp866Str added.
+UTF16ToCp866_DOSCyrillicRussianStr added.
+UTF16ToCp869_DOSGreek2Str added.
+
+2002-07-31
+ASCIIToUTF16Char() added.
+UTF16ToIso8859_2Char added.
+UTF16ToIso8859_3Char added.
+UTF16ToIso8859_4Char added.
+UTF16ToIso8859_5Char added.
+UTF16ToIso8859_6Char added.
+UTF16ToIso8859_7Char added.
+UTF16ToIso8859_8Char added.
+UTF16ToIso8859_9Char added.
+UTF16ToIso8859_10Char added.
+UTF16ToIso8859_13Char added.
+UTF16ToIso8859_14Char added.
+UTF16ToIso8859_15Char added.
+UTF16ToKOI8_RChar added.
+UTF16ToCp10000_MacRomanChar added.
+UTF16ToCp1250Char added.
+UTF16ToCp1251Char added.
+UTF16ToCp1252Char added.
+ASCIIToUTF16Str() added.
+UTF16ToIso8859_2Str added.
+UTF16ToIso8859_3Str added.
+UTF16ToIso8859_4Str added.
+UTF16ToIso8859_5Str added.
+UTF16ToIso8859_6Str added.
+UTF16ToIso8859_7Str added.
+UTF16ToIso8859_8Str added.
+UTF16ToIso8859_9Str added.
+UTF16ToIso8859_10Str added.
+UTF16ToIso8859_13Str added.
+UTF16ToIso8859_14Str added.
+UTF16ToIso8859_15Str added.
+UTF16ToKOI8_RStr added.
+UTF16ToCp10000_MacRomanStr added.
+UTF16ToCp1250Str added.
+UTF16ToCp1251Str added.
+UTF16ToCp1252Str added.
+Iso8859_7ToUTF16Char / Iso8859_7ToUTF16Str bug fixed.
+
+2002-04-10
+TdomEncodingType: etUnknown added. 'etcp1250' renamed to 'etWindows1250'. 'etcp1251' renamed to 'etWindows1251'. 'etcp1252' renamed to 'etWindows1252'.
+function StrToEncoding() added.
+function cp1250ToUTF16Char(): "Missing Euro sign" bug fixed.  Thanks to Petr Nejedlik for notification.
+Release of "Unicode Converter Library v.2.0.0".
+
+2002-04-09
+function SingleByteEncodingToUTF16Char() added.
+ECSMIBException exception added.
+TCSMIBChangingEvent event added.
+TCSMIB component added.
+
+2002-01-14
+Release of "Unicode Converter Library v.1.0.0".

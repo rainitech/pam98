@@ -1,0 +1,47 @@
+package Utilities_D6;
+
+{$R *.res}
+{$R 'AutoListUtils.dcr'}
+{$R 'AutoStrCtrls.dcr'}
+{$R 'UnicodeUtils.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Open XML Utilities Library'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  WideStrUtils in 'WideStrUtils.pas',
+  AutoListUtils in 'AutoListUtils.pas',
+  AutoStrCtrls in 'AutoStrCtrls.pas',
+  LangUtils in 'LangUtils.pas',
+  ParserUtils in 'ParserUtils.pas',
+  TreeUtils in 'TreeUtils.pas',
+  UnicodeUtils in 'UnicodeUtils.pas',
+  UriUtils in 'UriUtils.pas',
+  AbnfUtils in 'AbnfUtils.pas',
+  XmlRulesUtils in 'XmlRulesUtils.pas';
+
+end.

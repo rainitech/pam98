@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Parser Utilities Library</title>
+<style type="text/css">											body {
+												font-family : Arial, Helvetica, sans-serif;
+												font-size : small;
+												font-style : normal;
+												font-weight : normal;
+											}
+
+											div.legalnotice {
+												font-family : "Courier New", Courier, monospace;
+											}
+
+											h1 {
+												font-weight : bold;
+												font-size : xx-large;
+												font-style : normal;
+											}
+
+											h2 {
+												font-weight : bold;
+												font-size : xx-large;
+												font-style : italic;
+											}
+
+											h3 {
+												font-weight : bold;
+												font-size : x-large;
+												font-style : normal;
+											}
+
+											h4 {
+												font-weight : normal;
+												font-size : x-large;
+												font-style : italic;
+											}
+
+											h5 {
+												font-weight : bold;
+												font-size : large;
+												font-style : italic;
+											}
+
+											h6 {
+												font-weight : bold;
+												font-size : medium;
+												font-style : normal;
+											}
+
+											h7 {
+												font-weight : bold;
+												font-size : small;
+												font-style : normal;
+											}
+</style>
+</head>
+
+<body>
+<h1>Parser Utilities Library 1.0.0</h1>
+<h2>Delphi 5, 6, 7 and Kylix Implementation</h2>
+<h3>by Dieter K&ouml;hler</h3>
+<hr />
+<div class="legalnotice">
+
+<p>LICENSE</p>
+
+<p>The contents of this file are subject to the Mozilla Public License Version
+1.1 (the "License"); you may not use this file except in compliance with
+the License. You may obtain a copy of the License at
+"http://www.mozilla.org/MPL/"</p>
+
+<p>Software distributed under the License is distributed on an "AS IS" basis,
+WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+the specific language governing rights and limitations under the License.</p>
+
+<p>The Original Code is "ParserUtils.pas".</p>
+
+<p>The Initial Developer of the Original Code is Dieter Köhler (Heidelberg,
+Germany, "http://www.philo.de/"). Portions created by the Initial Developer
+are Copyright (C) 2003 Dieter Köhler. All Rights Reserved.</p>
+
+<p>Alternatively, the contents of this file may be used under the terms of the
+GNU General Public License Version 2 or later (the "GPL"), in which case the
+provisions of the GPL are applicable instead of those above. If you wish to
+allow use of your version of this file only under the terms of the GPL, and
+not to allow others to use your version of this file under the terms of the
+MPL, indicate your decision by deleting the provisions above and replace them
+with the notice and other provisions required by the GPL. If you do not delete
+the provisions above, a recipient may use your version of this file under the
+terms of any one of the MPL or the GPL.</p>
+</div>
+
+<hr />
+<h4>Acknowledgment</h4>
+
+<p>The TUtilsCustomReader and TUtilsCustomWriter classes were written by Robert Marquardt.</p>
+
+<hr />
+
+<h4>Introduction</h4>
+
+<p>The Parser Utilities Library contains general classes for parsing a byte stream. The latest version of this software is available at &lt;<a href="http://www.philo.de/xml/">http://www.philo.de/xml/</a>&gt;.</p>
+
+<hr />
+
+<h4>Using the unit</h4>
+
+<p>The Tree Utilities Library does not contain any components to be registered. So using it from inside your own projects is very simple: Add "ParserUtils" to the uses clause of your unit and make sure that the path to the location of the ParserUtils.pas file is included in Delphi's list of library paths. To include it go to the Library section of Delphi's Environment Options dialog (see the menu item: "Tools/Environment Options ...").</p>
+
+<hr />
+
+<h4>Defined Resourcestrings</h4>
+
+<p>These strings are used for the error messages of exceptions.</p>
+
+<ul>
+<li>SEncodingNotSupported = 'Encoding scheme not supported.';</li>
+<li>SInvalidUCS2 = 'Invalid ISO-10646-UCS-2 encoding at position %d';</li>
+<li>SInvalidUTF16BE = 'Invalid UTF-16BE sequence at position %d';</li>
+<li>SInvalidUTF16LE = 'Invalid UTF-16LE sequence at position %d';</li>
+<li>SInvalidUTF8 = 'Invalid UTF-8 sequence at position %d';</li>
+<li>SStreamNotSpecifiedError = 'Stream not specified.';</li>
+</ul>
+
+<hr />
+
+<h4>Typed Constants</h4>
+
+<ul>
+<li>TUtilsBOMType = (bomNone, bomUTF16BE, bomUTF16LE, bomUTF8)<br />TUtilsBOMType is used in the TUtilsAutoDetectInputSource class when determining which kind of Byte Order Mark (if any) is used by an input source.</li>
+</ul>
+
+<hr />
+
+<h4>TUtilsCustomReader = class</h4>
+
+<p>Use TUtilsCustomReader as a base class when defining a class for buffered input of stream data. </p>
+
+
+<h5>Protected Properties</h5>
+
+<h6>property BufSize: Integer (readonly)</h6>
+
+<p>Returns the size of the buffer as specified in the constructor.</p>
+
+<h6>property Position: Longint</h6>
+
+<p>Position is used to track the reader's position within the stream. The value of Position will always be inside the most recent buffer block read. Thus, for reading, Position will always be less than the stream's Position.</p>
+
+
+<h5>Protected Methods</h5>
+
+<h6>procedure FlushBuffer; virtual;</h6>
+
+<p>FlushBuffer synchronizes the reader's buffer with the associated stream by setting the stream's Position to match the reader's Position.</p>
+
+<h6>function GetPosition: Longint;</h6>
+
+<p>This function is called by the Position property to get the reader's position within the stream.</p>
+
+<p>Return Value:</p>
+<ul>
+<li>The reader's position within the associated stream.</li>
+</ul>
+
+<h6>function Read(  var Buf;
+                  const Count: Longint): Boolean; virtual;</h6>
+
+<p>Attempts to read up to Count bytes from the associated stream into Buf.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Buf<br />The target buffer for the bytes to be read.</li>
+<li>Count<br />The number of bytes to be read.</li>
+</ul>
+
+<p>Return Value:</p>
+<ul>
+<li>Returns False if Count bytes cannot be read from the associated stream, otherwise True is returned.</li>
+</ul>
+
+<h6>procedure SetPosition(Value: Integer);</h6>
+
+<p>This procedure is called by the Position property to specify the reader's position within the stream.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Value<br />The reader's new position within the associated stream.</li>
+</ul>
+
+
+<h5>Public Methods</h5>
+
+<h6>constructor Create(const Stream: TStream;
+                       const BufSize: Integer);</h6>
+
+<p>Creates a new TUtilsCustomReader object.  Create allocates memory for a TUtilsCustomReader object, and associates it with the stream passed in the Stream parameter, with a buffer of size BufSize.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Stream<br />The associated stream.</li>
+<li>BufSize<br />The size of the buffer. The value should be a multiplicity of 1024.</li>
+</ul>
+
+<h6>destructor Destroy; override;</h6>
+
+<p>Destroys the TUtilsCustomReader instance and frees its memory. Do not call Destroy directly in an application. Call Free instead, which checks for a nil reference before calling Destroy.</p>
+
+<hr />
+
+<h4>TUtilsCustomWriter = class</h4>
+
+<p>Use TUtilsCustomWriter as a base class when defining a class for buffered output of stream data.</p>
+
+
+<h5>Protected Properties</h5>
+
+<h6>property BufSize: Integer (readonly)</h6>
+
+<p>Returns the size of the buffer as specified in the constructor.</p>
+
+<h6>property Position: Longint</h6>
+
+<p>Position is used to track the writers's position within the stream. The value of Position will always be inside the most recent buffer block wrote. Thus, for writing, Position will always be greater than the stream's Position.</p>
+
+
+<h5>Protected Methods</h5>
+
+<h6>procedure FlushBuffer; virtual;</h6>
+
+<p>FlushBuffer synchronizes the writer's buffer with the associated stream by setting the stream's Position to match the writer's Position.</p>
+
+<h6>function GetPosition: Longint;</h6>
+
+<p>This function is called by the Position property to get the writer's position within the stream.</p>
+
+<p>Return Value:</p>
+<ul>
+<li>The writer's position within the associated stream.</li>
+</ul>
+
+<h6>procedure SetPosition(Value: Integer);</h6>
+
+<p>This procedure is called by the Position property to specify the writer's position within the stream.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Value<br />The writer's new position within the associated stream.</li>
+</ul>
+
+<h6>procedure Write(const Buf;
+                    const Count: Longint): Boolean; virtual;</h6>
+
+<p>Writes Count bytes from Buf to the associated stream.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Buf<br />The source buffer for the bytes to be written.</li>
+<li>Count<br />The number of bytes to be written.</li>
+</ul>
+
+<p>Exceptions:</p>
+<ul>
+<li>EWriteError<br />Raised if the associated stream fails to write all the specified bytes.</li>
+</ul>
+
+
+<h5>Public Methods</h5>
+
+<h6>constructor Create(const Stream: TStream;
+                       const BufSize: Integer);</h6>
+
+<p>Creates a new TUtilsCustomWriter object.  Create allocates memory for a TUtilsCustomWriter object, and associates it with the stream passed in the Stream parameter, with a buffer of size BufSize.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Stream<br />The associated stream.</li>
+<li>BufSize<br />The size of the buffer. The value should be a multiplicity of 1024.</li>
+</ul>
+
+<h6>destructor Destroy; override;</h6>
+
+<p>Destroys the TUtilsCustomWriter instance and frees its memory. Do not call Destroy directly in an application. Call Free instead, which checks for a nil reference before calling Destroy.</p>
+
+<hr />
+
+<h4>TUtilsInputSource = class(TUtilsCustomReader)</h4>
+
+<p>TUtilsInputSource encapsulates information about a character stream input source in a single object.</p>
+
+
+<h5>Protected Properties</h5>
+
+<h6>Column: Integer (readonly)</h6>
+
+<p>The column number of the current character. If the current character is a string terminator ($9C) the column number of the previous character is returned.</p>
+
+<h6>Line: Integer (readonly)</h6>
+
+<p>The line number of the current character. The line number is automatically incremented fo each LINE FEED ($0A) detected. If the current character is a string terminator ($9C) the line number of the previous character is returned.</p>
+
+<h6>NormalizeLineFeed: Boolean (default True)</h6>
+
+<p>If 'True' (the default), line breaks are adjusted to Linux-style breaks with a single linefeed character, i.e. a sequence of CARRIAGE RETURN ($0D) + LINE FEED ($0A) or a single CARRIAGE RETURN is normalized to a single LINE FEED ($0A). If 'False' no normalization is taking place.</p>
+
+<h6>TabWidth: Integer</h6>
+
+<p>Specifies the width of TAB characters ($09) when calculating the Column number. This is especially useful for adjusting the TUtilsInputSource object to the settings of some editor. The default value of TabWidth is 4.</p>
+
+<h5>Public Properties</h5>
+
+<h6>Bof: Boolean (readonly)</h6>
+
+<p>'True' if the input source is at its start position, i.e. the value of the current code point is $98 (START OF STRING); 'False' otherwise.</p>
+
+<h6>CurrentCodePoint: Longint (readonly)</h6>
+
+<p>The UCS-4 code point of the current character. Immediately after creating a TUtilsInputSource object the value $98 (START OF STRING) is returned. When the end of the input source is reached the value $9C (STRING TERMINATOR) is returned.</p>
+
+<h6>Encoding: TdomEncodingType (readonly)</h6>
+
+<p>Returns the character encoding scheme used by the input stream.</p>
+
+<h6>Eof: Boolean (readonly)</h6>
+
+<p>'True' if the end of the input stream was reached, i.e. the value of the current code point is $9C (STRING TERMINATOR); 'False' otherwise.</p>
+
+<h6>NextCodePoint: Longint (readonly)</h6>
+
+<p>The UCS-4 code point of the character following the current character. If the current character is of code point $9C (STRING TERMINATOR) or if the last character of the input source, the value $9C (STRING TERMINATOR) is returned.</p>
+
+<h6>PreviousCodePoint: Longint (readonly)</h6>
+
+<p>The UCS-4 code point of the character preceding the current character. Immediately after creating a TUtilsInputSource object or if the current character if positioned at the first character of the input source or if the input source is empty the value $98 (START OF STRING) is returned.</p>
+
+
+<h5>Public Methods</h5>
+
+<h6>constructor Create(const Stream: TStream;
+                       const LineOffset,
+                             ColumnOffset, 
+                             BufSize: Integer;
+                       const AEncoding: TdomEncodingType);</h6>
+
+<p>Constructs and initializes an instance of TUtilsInputSource with the specified Stream.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Stream<br />The TStream object which gives access to the source to be processed.</li>
+<li>LineOffset<br />The offset for calculating the line number property.</li>
+<li>ColumnOffset<br />The offset for calculating the column number property.</li>
+<li>BufSize<br />The size of the buffer. The value should be a multiplicity of 1024.</li>
+<li>AEncoding<br />The character encoding scheme used in the stream.</li>
+</ul>
+
+<p>Exceptions:</p>
+
+<ul>
+<li>EConvertError<br />Raised if the source stream's first character (if any) cannot be converted from the specified encoding to a UCS-4 code point.</li>
+</ul>
+
+<h6>function Match(Ucs2Str: WideString): Boolean; virtual;</h6>
+
+<p>Advances the current code point as far as the following content of the input stream matches the specified WideString. After calling Match, if the specified WideString completely matched the following content of the input stream, the position of the current code point is that of the last matched character. If the following content of the input stream did not completely match the specified WideString, the position of the current code point after calling Match is that of the first mismatched character.</p>
+
+<p>Hint: If the input stream contains a character of code point $9C (STRING TERMINATOR) the TUtilsInputSource object cannot advance the current character beyond this character. The Match function may nevertheless test for STRING TERMINATOR which must appear at the end of the specified wideString in order to get a chance for a positive result.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Ucs2Str<br />A UCS-2 encoded WideString to be matched.</li>
+</ul>
+
+<p>Return Value:</p>
+<ul>
+<li>'True' if the specified wideString completely matched the following content of the input stream, 'False' otherwise.</li>
+</ul>
+
+<p>Exceptions:</p>
+<ul>
+<li>EConvertError<br />Raised if the next character(s) of the source stream cannot be converted (according to the current character encoding scheme) to a UCS-4 code point.</li>
+</ul>
+
+<h6>procedure Next; virtual;</h6>
+
+<p>Advances the current character to the next character (if any) of the input stream. If the code point of the current character is $9C (STRING TERMINATOR) calling Next has no effect. If the end of the input stream is reached the code point of the current character is set to $9C (STRING TERMINATOR).</p>
+
+<p>Hint: If the input stream contains a character of code point $9C (STRING TERMINATOR) the TUtilsInputSource object cannot advance the current character beyond this character. Note also that if the value of the current character is $9C the code point returned by the NextChar property is always $9C no matter whether the end of the input stream was reached or not.</p>
+
+<p>Exceptions:</p>
+<ul>
+<li>EConvertError<br />Raised if the next character of the source stream cannot be converted (according to the current character encoding scheme) to a UCS-4 code point.</li>
+</ul>
+
+<h6>procedure Reset; virtual;</h6>
+
+<p>Resets the input source to its initial position and state.</p>
+
+<p>Exceptions:</p>
+
+<ul>
+<li>EConvertError<br />Raised if the source stream's first character (if any) cannot be converted from the specified encoding to a UCS-4 code point.</li>
+</ul>
+
+<h6>function SkipNext(Ucs2Str: WideString): Integer; virtual;</h6>
+
+<p>Advances the current character to the next character (if any) of the input stream while skipping any UCS-2 character contained in Ucs2Str. If the code point of the current character is $9C (STRING TERMINATOR) calling SkipNext has no effect. If the end of the input stream is reached the code point of the current character is set to $9C (STRING TERMINATOR).</p>
+
+<p>Hint: If the input stream contains a character of code point $9C (STRING TERMINATOR) the TUtilsInputSource object cannot advance the current character beyond this character. Including $9C in the Ucs2Str parameter has no effect. Note also that if the value of the current character is $9C the code point returned by the NextChar property is always $9C no matter whether the end of the input stream was reached or not.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Ucs2Str<br />A UCS-2 encoded WideString containing all the characters to be skipped. Repeating a character should be avoided if performance is important. Including STRING TERMINATOR ($9C) in the list of characters to be skipped has no effect, i.e. STRING TERMINATOR appearing in the input stream always terminates SkipNext.</li>
+</ul>
+
+<p>Return Value:</p>
+<ul>
+<li>The number of characters skipped.</li>
+</ul>
+
+<p>Exceptions:</p>
+<ul>
+<li>EConvertError<br />Raised if the next character of the source stream cannot be converted (according to the current character encoding scheme) to a UCS-4 code point.</li>
+</ul>
+<hr />
+
+<h4>TUtilsAutoDetectInputSource = class(TUtilsInputSource)</h4>
+
+<p>TUtilsAutoDetectInputSource is a TUtilsInputSource descendant which can autodetect UTF-8 or UTF-16 encodings when initialized with a stream starting with a byte order marks.</p>
+
+<h5>Public Properties</h5>
+
+<h6>ByteOrderMarkType: TUtilsBOMType (readonly)</h6>
+
+<p>The type of the Byte Order Mark (if any) of the input stream. This is one of the following values:</p>
+<ul>
+<li>bomNone<br />The input stream has no byte order mark.</li>
+<li>bomUTF16BE<br />The input stream has a UTF-16BE byte order mark ($FEFF).</li>
+<li>bomUTF16LE<br />The input stream has a UTF-16LE byte order mark ($FFFE).</li>
+<li>bomUTF8<br />The input stream has a UTF-8 byte order mark ($EFBBBF).</li>
+</ul>
+
+
+<h5>Public Methods</h5>
+
+<h6>constructor Create(const Stream: TStream;
+                       const LineOffset,
+                             ColumnOffset,
+                             BufSize: Integer;
+                       const AEncoding: TdomEncodingType);</h6>
+
+<p>Constructs and initializes an instance of TUtilsInputSource with the specified Stream. If the specified Stream starts with a UTF-8 or UTF-16 byte order mark, the character encoding scheme is set as indicated by the byte order mark and the byte order mark is skipped, i.e. it is not accessable via the CurrentCodePoint etc. properties. If no byte order mark was found the specified default character encoding scheme is used.</p>
+
+<p>Parameters:</p>
+<ul>
+<li>Stream<br />The TStream object which gives access to the source to be processed.</li>
+<li>LineOffset<br />The offset for calculating the line number property.</li>
+<li>ColumnOffset<br />The offset for calculating the column number property.</li>
+<li>BufSize<br />The size of the buffer. The value should be a multiplicity of 1024.</li>
+<li>AEncoding<br />The default character encoding scheme.</li>
+</ul>
+
+<p>Exceptions:</p>
+
+<ul>
+<li>EConvertError<br />Raised if the source stream's first character (if any) cannot be converted from the detected or default encoding respectively to a UCS-4 code point.</li>
+</ul>
+
+</body>
+</html>
